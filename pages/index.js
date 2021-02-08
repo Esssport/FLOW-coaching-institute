@@ -1,17 +1,24 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import Navbar from '../components/nav-bar'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Flow Coaching Institute</title>
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main className={styles.main}>
+        <img src="/logo.svg" alt="Flow Coaching Institute Logo" className="logo"/>
+        <Navbar/>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          this is {' '}
+          <Link href="/blog/first-post">
+           <a>The blog page </a>
+          </Link>
         </h1>
 
         <p className={styles.description}>
