@@ -9,15 +9,16 @@ export default function Home() {
       <Head>
         <title>Flow Coaching Institute</title>
         <link rel="icon" href="/favicon.svg" />
+        <style>@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');</style>
+
       </Head>
 
       <main className={styles.main}>
-        <img src="/logo.svg" alt="Flow Coaching Institute Logo" className="logo"/>
-        <Navbar/>
+        <Navbar />
         <h1 className={styles.title}>
           this is {' '}
           <Link href="/blog/first-post">
-           <a>The blog page </a>
+            <a>The blog page </a>
           </Link>
         </h1>
 

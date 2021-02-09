@@ -1,0 +1,83 @@
+// @font-face {
+//   font-family: Spartan;
+//   src: url(https://fonts.googleapis.com/css?family=Spartan);
+// }
+
+$Primary-color: #4A43B3;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+} */
+
+Nav {
+  padding-top: 50px;
+  display: flex;
+
+  .menuLinks {
+    Link {
+      flex: 2;
+    }
+    a {
+      font-weight: bold;
+      flex: 1;
+      padding: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      left: 7.53%;
+      right: 6.09%;
+      top: 33.33%;
+      bottom: 22.22%;
+
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 20px;
+      color: 000000;
+
+      &:first-child {
+        background-color: $Primary-color;
+        color: white;
+        
+        border-radius: 10px;
+        
+        &:visited {
+          color: white;
+        }
+      }
+
+      &:active, &:visited {
+        color: black;
+      }
+    }
+  }
+}
+
+.logo {
+  padding-top: 10px;
+  height: 95px;
+  width: 150px;
+}
