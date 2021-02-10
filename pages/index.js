@@ -2,20 +2,39 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Navbar from '../components/nav-bar'
+import Slider from 'react-slick'
+
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 200
+  };
+
   return (
     <div className={styles.container}>
       <Head>
         <title>Flow Coaching Institute</title>
         <link rel="icon" href="/favicon.svg" />
-        <style>@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');</style>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');</style>
 
       </Head>
 
       <main className={styles.main}>
         <Navbar />
-        <h1 className={styles.title}>
+        <div className="banner">
+          <div className="banner-description">
+           <h1>Welcome To Our <br/>Flow World</h1>
+          </div>
+          {/* <img src='/banner.svg'></img> */}
+          {/* <div className="slider-container">
+            <Slider {...settings}>
+              <div><div className="image" style={{ backgroundImage: `url(${banner})` }} /></div>
+            </Slider>
+          </div> */}
+        </div>
+        {/* <h1 className={styles.title}>
           this is {' '}
           <Link href="/blog/first-post">
             <a>The blog page </a>
@@ -55,18 +74,11 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+
       </footer>
     </div>
   )

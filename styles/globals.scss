@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Spartan', sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 18px;
 }
 
@@ -34,27 +34,26 @@ img {
 } */
 
 Nav {
-  padding-top: 50px;
+  padding: 10px 30px;
+  width: 100vw;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
   display: flex;
 
   .menuLinks {
-    Link {
-      flex: 2;
-    }
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     a {
-      font-weight: bold;
-      flex: 1;
-      padding: 15px;
+      padding: 10px 25px;
       text-decoration: none;
       text-transform: uppercase;
-      left: 7.53%;
-      right: 6.09%;
-      top: 33.33%;
-      bottom: 22.22%;
 
       font-style: normal;
       font-weight: 900;
-      font-size: 18px;
+      font-size: 12px;
       line-height: 20px;
       color: 000000;
 
@@ -76,8 +75,31 @@ Nav {
   }
 }
 
+.shopping-cart {
+  position: relative;
+  height: 35px;
+  width: 35px;
+}
+
 .logo {
-  padding-top: 10px;
-  height: 95px;
+  flex: 2;
+  height: 100px;
   width: 150px;
+}
+
+.banner {
+  background-image: url('../public/banner.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 918px;
+  
+  .banner-description{
+    h1 {
+      font-size: 54px;
+      font-weight: bolder;
+      margin: 0;
+      padding-left: 8%;
+      padding-top: 15%;
+    }
+  }
 }

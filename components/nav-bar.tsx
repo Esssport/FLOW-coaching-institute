@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <>
             <nav>
-                <Link href="/"><a><img src="/logo.svg" alt="Flow Coaching Institute Logo" className="logo" /></a></Link>
+                <Link href="/"><img src="/logo.svg" className="logo" alt="Flow Coaching Institute Logo"/></Link>
                 <div className="menuLinks">
                     <Link href="/">
                         <a>Become a Coach Now</a>
@@ -22,7 +22,7 @@ export default function Navbar() {
                         <a>Flowsity</a>
                     </Link>
                     <Link href="/">
-                        <a><img src="/shoppingCart.svg" alt="Shopping cart" className="logo" /></a>
+                        <a><img src="/shoppingCart.svg" className='shopping-cart' alt="Shopping cart"/></a>
                     </Link>
                 </div>
             </nav>
