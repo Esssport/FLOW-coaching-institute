@@ -34,7 +34,7 @@ img {
 } */
 
 Nav {
-  padding: 10px 30px;
+  padding: 10px;
   width: 100vw;
   justify-content: center;
   position: absolute;
@@ -47,7 +47,8 @@ Nav {
     align-items: center;
     justify-content: flex-end;
     a {
-      padding: 10px 25px;
+      margin: 0 15px;
+      padding: 9px 9px;
       text-decoration: none;
       text-transform: uppercase;
 
@@ -66,6 +67,9 @@ Nav {
         &:visited {
           color: white;
         }
+      &:last-child{
+        margin-right: 0;
+      }
       }
 
       &:active, &:visited {
@@ -85,6 +89,9 @@ Nav {
   flex: 2;
   height: 100px;
   width: 150px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .banner {
@@ -94,12 +101,27 @@ Nav {
   height: 918px;
   
   .banner-description{
+    padding-left: 8%;
+    padding-top: 15%;
     h1 {
+      font-weight: 700;
       font-size: 54px;
       font-weight: bolder;
       margin: 0;
-      padding-left: 8%;
-      padding-top: 15%;
+    }
+    h2 {
+      font-weight: 500;
+      width: 800px;
+    }
+    .accredited-by{
+      width: 650px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      img {
+        height: 55px;
+        padding: 10px;
+      }
     }
   }
 }

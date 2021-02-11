@@ -20,13 +20,22 @@ export default function Home() {
         <style>@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');</style>
 
       </Head>
-
       <main className={styles.main}>
         <Navbar />
         <div className="banner">
           <div className="banner-description">
            <h1>Welcome To Our <br/>Flow World</h1>
+           <h2>We help you blend your business knowledge into coaching towards a winning coaching career.</h2>
+          <div className="accredited-by">
+            <strong>Accredited by</strong>
+            <img src="/third-party/ICF.svg"></img>
+            <img src="/third-party/ACTP.svg"></img>
+            <img src="/third-party/ACSTH.svg"></img>
+            <img src="/third-party/ICF-CCE.svg"></img>
           </div>
+          
+          </div>
+          
           {/* <img src='/banner.svg'></img> */}
           {/* <div className="slider-container">
             <Slider {...settings}>
