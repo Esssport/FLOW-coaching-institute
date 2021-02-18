@@ -10,7 +10,10 @@ export default function Navbar() {
                         <a>Become a Coach Now</a>
                     </Link>
                     <Link href="/">
-                        <a>Online Certifications</a>
+                        <a>Online Certifications <img src="/arrow-down.svg" className='arrow-down' alt="arrow-down"/></a>
+                    </Link>
+                    <Link href="/">
+                        <a>Corporate</a>
                     </Link>
                     <Link href="/">
                         <a>About Us</a>
