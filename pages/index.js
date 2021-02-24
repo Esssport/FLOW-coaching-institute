@@ -5,6 +5,8 @@ import Navbar from '../components/nav-bar'
 import Slider from 'react-slick'
 import CustomSlider from '../components/custom-slider'
 import CtaBanner from '../components/cta-banner'
+import Tile from "../components/tile"
+import ProgramTile from "../components/program-tile"
 
 
 export default function Home() {
@@ -50,9 +52,17 @@ export default function Home() {
             <p>Completion of the program gives you <strong>125 coach specific training hours,</strong> completion of mandatory mentoring hours  and a performance evaluation process included.</p>
           </div>
 
-          <CustomSlider/>
-          <CtaBanner copy="Is coaching a right fit for you?" ctaText="TAKE THE QUIZ NOW"/>
+          <CustomSlider tileType="custom-tile">
+            <Tile />
+          </CustomSlider>
+          <CtaBanner copy="Is coaching a right fit for you?" ctaText="TAKE THE QUIZ NOW" />
 
+          <div className="program-section">
+            <h1>Our Coaching Programs</h1>
+            <CustomSlider tileType="program-tile">
+              <ProgramTile />
+            </CustomSlider>
+          </div>
         </div>
 
         {/* <img src='/banner.svg'></img> */}

@@ -1,18 +1,26 @@
+import { ReactComponentElement } from "react"
 import Tile from './tile'
-export default function customSlider() {
+
+interface SliderProps {
+    tileType: Text;
+    children: any;
+    
+}
+
+
+export default function customSlider({tileType, children}: SliderProps ) {
     return (
-        <div className="custom-slider">
-            {/* loop over the <tile element/>  */}
-            <Tile/>
-            <Tile/>
-            <Tile/>
-            <Tile/>
-            <Tile/>
-            <Tile/>
-            <Tile/>
-            <Tile/>
-            <Tile/>
-            <Tile/>
+        <div className={`${tileType.toString()} custom-slider`}>
+            {children}
+            {children}
+            {children}
+            {children}
+            {children}
+            {children}
+            {children}
+            {children}
+            {children}
+            {children}
         </div>
     )
 }
