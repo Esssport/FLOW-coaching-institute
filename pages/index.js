@@ -59,9 +59,43 @@ export default function Home() {
 
           <div className="program-section">
             <h1>Our Coaching Programs</h1>
-            <CustomSlider tileType="program-tile">
+            <CustomSlider tileType="program-tiles">
               <ProgramTile />
             </CustomSlider>
+            <h1>TRUSTED BY BRANDS</h1>
+            <img src="/third-party/companies_section.svg" alt="trusted-companies" className="trusted-companies"></img>
+            <div className="events">
+              <div className="description">
+                <h1>UPCOMING<br />EVENTS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi et, adipiscing ac feugiat fermentum. Arcu orci sodales nibh sit fermentum. Ut sed sed id pellentesque est rhoncus blandit.</p>
+              </div>
+              <div className="event-slider-container">
+
+                <CustomSlider tileType="event-tiles">
+
+                  <div className="event-tile">
+                    <div className="date-bar">
+                      <h1><span className="day-sub-section">08</span><br/><span className="month-sub-section">January</span></h1>
+                      <a className="free-button red-button">Free</a>
+                    </div>
+                    <h1>Flow Global Talks</h1>
+                  </div>
+                </CustomSlider>
+
+
+
+              </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
           </div>
         </div>
 

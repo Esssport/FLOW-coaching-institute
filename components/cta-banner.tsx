@@ -10,7 +10,7 @@ function removeElement(el: Element) {
 export default function CtaBanner({ copy, ctaText }: ctaProps) {
     return (
         <div className="cta-banner-container">
-            <button className="close-button">Close</button>
+            <button className="close-button red-button">Close</button>
             <div className="cta-banner">
                 <button className="cta-button">{ctaText}</button>
                 <h1>{copy}</h1>

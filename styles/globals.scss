@@ -4,6 +4,7 @@
 // }
 
 $Primary-color: #4A43B3;
+$Primary-border: 5px outset rgba(159, 159, 159, 0.461);
 
 
 html,
@@ -215,28 +216,122 @@ Nav {
       text-align: left;
     }
   }
-  
-  .program-tile{
-    display: inline-block;
-    height: 740px;
-    margin-right: 78px;
-    background-repeat: no-repeat;
-    h1 {
-      margin-top: 300px !important;
+
+  .program-info {
+    display: flex;
+
+    ul {
+      flex: 1;
+      display: inline-block;
     }
-    p {
-      width: 400px;
-    }
-  }
-  
-  .program-section{
-    padding-left: inherit;
-    
-      h1{
-        margin-top: 150px;
+
+    li {
+      // display: flex;
+      vertical-align: middle;
+      // align-items: center;
+      margin-bottom: 20px;
+
+      img {
+        margin-bottom: -3px;
+        margin-right: 16px;
+        height: 20px;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      list-style: none;
+
+      h2 {
+        margin-top: 15px;
+        line-height: 40px;
+        font-weight: 700;
+        font-size: 24px;
         text-align: left;
       }
-    
+    }
+  }
+
+  img.trusted-companies {
+    width: 100%;
+  }
+
+  .learn-more-container {
+    height: 200px;
+    display: flex;
+    align-content: center;
+    margin: 20px auto;
+
+    a {
+      font-family: Spartan;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 144%;
+      /* identical to box height, or 46px */
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      color: #FA570E;
+
+
+      margin: auto;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .program-tile {
+    // filter: drop-shadow(1px 1px 0px black);
+    background-size: cover;
+    border: $Primary-border;
+    padding: 44px;
+    border-radius: 16px;
+    display: inline-block;
+    height: 729px;
+    width: 611px;
+    margin-right: 78px;
+    background-repeat: no-repeat;
+
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      margin-top: 127px !important;
+
+      img {
+        margin-right: 10px;
+        height: 60px;
+      }
+    }
+
+    p {
+      text-align: left;
+      white-space: normal;
+      line-height: 37px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .program-tiles {
+    margin-top: 50px;
+    // width: 97%;
+  }
+
+  .program-section {
+    padding-left: inherit;
+
+    h1 {
+      margin-top: 150px;
+      text-align: left;
+    }
+
   }
 
   .tile {
@@ -295,7 +390,7 @@ Nav {
     // }
   }
 
-  .custom-slider {
+  .slider {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -343,10 +438,23 @@ Nav {
   .close-button {
     display: inline-block;
     position: relative;
+
+
+  }
+
+  .live-button {
+    width: 140px;
+    // display: inline-block;
+    position: sticky;
+    // left: 0px;
+    // bottom: 0px;
+  }
+
+  .red-button {
+    min-width: 90px;
     font-weight: 700;
     font-size: 18px;
     height: 45px;
-    width: 90px;
     top: 20px;
     left: 90vw;
     background: #EB5757;
@@ -354,4 +462,128 @@ Nav {
     border-radius: 50px;
     border: none;
   }
+
+  .free-button {
+    min-width: 167px;
+    // height: 55px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 14px;
+
+  }
+
+
+  .events {
+    display: flex;
+    margin-top: 170px;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,
+        #fff 75%,
+        #FFEFDC 1px);
+
+    .date-bar {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      margin-bottom: 20%;
+
+      h1 {
+        line-height: 12px;
+        padding-top: 15px;
+      }
+    }
+
+    h1 {
+      margin-top: 0 !important;
+    }
+
+
+    .description {
+      // flex: 1;
+      width: 400px;
+      display: inline-block;
+
+
+
+      p {
+        display: inline-block;
+        text-align: left;
+        padding: 0;
+        max-width: 700px;
+      }
+    }
+
+    .event-slider-container {
+      // flex: 2;
+      display: inline-block;
+      width: 70%;
+
+    }
+
+    .event-tile {
+      background-image: linear-gradient(to bottom,
+          $Primary-color 80%,
+          #FFFFFF 400px);
+      background-size: cover;
+      border: solid;
+      padding: 44px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-right: 78px;
+      Width: 563px;
+      Height: 808.75px;
+
+      h1 {
+        display: inline-block;
+        color: white;
+        width: 68%;
+        font-size: 40px;
+        font-weight: 700;
+        white-space: normal;
+
+
+        &:nth-child(2) {
+
+          &:after {
+            content: "";
+            /* This is necessary for the pseudo element to work. */
+            display: block;
+            /* This will put the pseudo element on its own line. */
+            /* margin: 0 auto; */
+            /* This will center the border. */
+            width: 50%;
+            /* Change this to whatever width you want. */
+            padding-top: 40%;
+            /* This creates some space between the element and the border. */
+            border-bottom: solid;
+            /* This creates the border. Replace black with whatever color you want. */
+          }
+        }
+        
+
+        // display: flex;
+
+
+
+        span {
+          line-height: 10px;
+          display: flex;
+          align-content: center;
+
+          // &.day-sub-section {
+          // }
+
+          &.month-sub-section {
+            font-size: 20px;
+            margin-top: 10px;
+            // display: block;
+            // margin-top: -100px;
+          }
+        }
+      }
+    }
+  }
+
+
+
 }
