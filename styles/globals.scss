@@ -9,6 +9,7 @@ $Primary-border: 5px outset rgba(159, 159, 159, 0.461);
 
 html,
 body {
+  background-color: #f9f9f9;
   padding: 0;
   margin: 0;
   font-family: 'Spartan', sans-serif;
@@ -140,10 +141,11 @@ Nav {
 }
 
 .content {
-  padding: 0 1%;
+  // padding: 0 1%;
   margin-top: 100px;
 
   h1 {
+    padding: 0 1%;
     font-weight: 900;
     font-size: 55px;
     text-align: center;
@@ -162,6 +164,7 @@ Nav {
   }
 
   h2 {
+    padding: 0 1%;
     margin-top: 0;
     line-height: 76px;
     text-align: center;
@@ -391,6 +394,7 @@ Nav {
   }
 
   .slider {
+    padding: 0 1%;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -478,7 +482,7 @@ Nav {
     margin-top: 170px;
     justify-content: space-between;
     background-image: linear-gradient(to bottom,
-        #fff 75%,
+        #f9f9f9 75%,
         #FFEFDC 1px);
 
     .date-bar {
@@ -499,8 +503,10 @@ Nav {
 
 
     .description {
+      flex: 3;
+      padding: 0 1%;
       // flex: 1;
-      width: 400px;
+      // width: 500px;
       display: inline-block;
 
 
@@ -514,16 +520,16 @@ Nav {
     }
 
     .event-slider-container {
-      // flex: 2;
+      flex: 5;
       display: inline-block;
-      width: 70%;
+      width: 50%;
 
     }
 
     .event-tile {
       background-image: linear-gradient(to bottom,
-          $Primary-color 80%,
-          #FFFFFF 400px);
+          #FFFFFF 80%,
+          #f9f9f9 400px);
       background-size: cover;
       border: solid;
       padding: 44px;
@@ -535,7 +541,7 @@ Nav {
 
       h1 {
         display: inline-block;
-        color: white;
+
         width: 68%;
         font-size: 40px;
         font-weight: 700;
@@ -559,7 +565,7 @@ Nav {
             /* This creates the border. Replace black with whatever color you want. */
           }
         }
-        
+
 
         // display: flex;
 
@@ -581,9 +587,102 @@ Nav {
           }
         }
       }
+
+      small {
+        margin-top: 18px;
+        margin-bottom: 43px;
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
+      }
+
+      .learn-more-events {
+        font-family: Spartan;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 46px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #2971D2;
+        margin-top: 57px;
+        margin-bottom: 32px;
+        display: inline-block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .info {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        small {
+          margin-bottom: 10px;
+        }
+
+        .sponsor-wrapper {
+          flex: 2;
+          // max-width: 200px;
+          img {
+            height: 100px;
+          }
+
+          & {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 50%;
+            border-right: 1px solid #DEDEDE;
+          }
+        }
+
+        .support-wrapper {
+          small {
+            margin-bottom: 10px;
+          }
+          padding-left: 20px;
+          flex: 3;
+          h1 {
+            width: 100%;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            &::after{
+              display: none;
+            }
+          }
+          h2 {
+            line-height: 10px;
+          }
+        }
+        
+        
+
+      }
     }
   }
 
-
+  
+  .cta-orange {
+    // margin-top: 25%;
+    position: relative;
+    bottom: -22%;
+    right: auto;
+    a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 72px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 57px;
+    margin-bottom: 32px;
+    display: inline-block;
+    color: #FA570E;
+    }
+  }
 
 }
