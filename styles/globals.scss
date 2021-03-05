@@ -5,7 +5,11 @@
 
 $Primary-color: #4A43B3;
 $Primary-border: 5px outset rgba(159, 159, 159, 0.461);
+$Space-normal: 38px;
 
+html {
+  height: 100%;
+}
 
 html,
 body {
@@ -83,6 +87,34 @@ Nav {
   }
 }
 
+.cta-learn-more {
+
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 144%;
+  /* identical to box height, or 46px */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  color: #FA570E;
+
+
+  margin: auto;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.black {
+  color: #070606;
+}
+
 .cta-button {
   border-radius: 10px;
   // height: 87px;
@@ -91,7 +123,6 @@ Nav {
   text-transform: uppercase;
   color: white;
   font-size: 40px;
-  margin-top: 38px;
   font-weight: 900;
   border: none;
 
@@ -135,6 +166,10 @@ Nav {
         height: 55px;
         padding: 10px;
       }
+    }
+
+    button {
+      margin-top: $Space-normal;
     }
 
   }
@@ -610,6 +645,7 @@ Nav {
         margin-top: 57px;
         margin-bottom: 32px;
         display: inline-block;
+
         &:hover {
           text-decoration: underline;
         }
@@ -619,12 +655,14 @@ Nav {
         display: flex;
         // align-items: center;
         justify-content: center;
+
         small {
           margin-bottom: 10px;
         }
 
         .sponsor-wrapper {
           flex: 2;
+
           // max-width: 200px;
           img {
             height: 100px;
@@ -643,45 +681,169 @@ Nav {
           small {
             margin-bottom: 10px;
           }
+
           padding-left: 20px;
           flex: 3;
+
           h1 {
             width: 100%;
             text-transform: uppercase;
             margin-bottom: 0;
-            &::after{
+
+            &::after {
               display: none;
             }
           }
+
           h2 {
             line-height: 10px;
           }
         }
-        
-        
+
+
 
       }
     }
   }
 
-  
+
   .cta-orange {
     // margin-top: 25%;
     position: relative;
     bottom: -22%;
     right: auto;
+
     a {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 72px;
-    text-decoration: none;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 72px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin-top: 57px;
+      margin-bottom: 32px;
+      display: inline-block;
+      color: #FA570E;
+    }
+  }
+
+
+  .book-section {
+    background: url('/bg-book.svg') no-repeat center center fixed;
+    background-size: cover;
+
     display: flex;
-    align-items: center;
-    margin-top: 57px;
-    margin-bottom: 32px;
-    display: inline-block;
-    color: #FA570E;
+    justify-content: space-between;
+    // background-image: url('/bg-book.svg');
+    // background-size: 100% 1000px;
+    // // background-position: 0px 100%;
+    // background-repeat: no-repeat;
+    min-height: 1000px;
+    padding-bottom: 100px;
+
+    .book-description {
+      display: inline-block;
+
+      h1 {
+        width: 70%;
+      }
+
+      p {
+        text-align: left;
+        max-width: 700px;
+      }
+
+      .discount-section {
+        display: flex;
+
+        .discount-description {
+          margin-top: 29px;
+          margin-bottom: 29px;
+
+          h2,
+          p {
+            color: #FA0E0E;
+            line-height: 40px;
+            margin: 0;
+            margin-left: 15px;
+            // display: inline-block;
+            text-align: left;
+            padding-left: 0;
+          }
+
+          h2 {
+            font-weight: 700;
+            font-size: 24px;
+          }
+
+          p {
+            margin-top: 10px;
+            max-width: 500px;
+            font-weight: 400;
+            font-size: 19px;
+            // line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .apply-buttons {
+    max-width: 700px;
+    display: flex;
+  }
+
+  .empowerment-section {
+    padding-top: 50px;
+
+    h1 {
+      margin-top: 0;
+      max-width: 600px;
+      background: linear-gradient(335.76deg, #FFB459 43.93%, #5222D0 69.3%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 10px;
+      text-align: left;
+      color: #58595C;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 24px;
+
+      img {
+        margin-left: 5px;
+      }
+    }
+
+    background: url('/banner-women.svg');
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .content-align-center {
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    a {
+      margin: auto;
+      margin-top: 30px;
     }
   }
 

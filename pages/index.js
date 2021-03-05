@@ -72,6 +72,8 @@ export default function Home() {
               </div>
               <div className="event-slider-container">
                 <CustomSlider tileType="event-tiles">
+
+                  {/* TODO: export to own component */}
                   <div className="event-tile">
                     <div className="date-bar">
                       <h1><span className="day-sub-section">08</span><br /><span className="month-sub-section">January</span></h1>
@@ -95,9 +97,38 @@ export default function Home() {
                 </CustomSlider>
               </div>
             </div>
-            
-            
-            
+
+            <div className="book-section">
+              <img src='/book.svg' alt='book'></img>
+              <div className="book-description">
+                <h1>FLOW Coaching Methodology & Principles</h1>
+
+                <div className="discount-section">
+                  <img src="/icon-discount.svg"></img>
+                  <div className="discount-description">
+                    <h2>Free for course participants</h2>
+                    <p>The course participants have FREE access to the e-book worth <strong>54.99 CAD$</strong></p>
+                  </div>
+                </div>
+                <p>For many years now coaches have been inspiring lives across the globe by using the FLOW Coaching Methodology with their clients. Other than FLOW coaches we have been receiving many requests from other coaches to learn about the FLOW Coaching Methodology. As a result, we have decided to make the FLOW Coaching methodology and principles available to other coaches from around the world.</p>
+                <div className="apply-buttons">
+                  <button className="cta-button">Purchase</button>
+                  <a className="cta-learn-more black">Learn more &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="empowerment-section">
+              <h1>Women empowerment is a passion for us!</h1>
+              <h2>Follow us on Instagram <img src="/icon-instagram.svg"></img></h2>
+            </div>
+
+            <div className="content-align-center">
+              <h1>Ready to invest in yourself?</h1>
+              <p>Choose your program now and sharpen your coaching skills.</p>
+              <a className="cta-button">Start Here</a>
+            </div>
+
           </div>
         </div>
 
