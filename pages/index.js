@@ -7,6 +7,17 @@ import CustomSlider from '../components/custom-slider'
 import CtaBanner from '../components/cta-banner'
 import Tile from "../components/tile"
 import ProgramTile from "../components/program-tile"
+import  axios from "axios"
+
+async function getPageFromPath(path, promise) {
+  const data = await promise;
+  const array = data.data
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].path === path)
+    return array[i]
+  }
+}
+
 
 
 export default function Home() {
@@ -15,6 +26,15 @@ export default function Home() {
     infinite: false,
     speed: 200
   };
+
+  //TODO: Get strapi address from environment varriables, remove hardcoded localhost
+
+  const strapiURL = "http://localhost:1337/"
+  const pagePromise = axios.get(strapiURL + "pages")
+  const page = getPageFromPath("/", pagePromise)
+  console.log("TITLE", page.title)
+  // const pages = await pagePromise;
+  
 
   return (
     <div className={styles.container}>
@@ -29,6 +49,7 @@ export default function Home() {
         <div className="banner">
           <div className="banner-description">
             <h1>Welcome To Our <br />Flow World</h1>
+            {/* <h1>{page.then(data=>data.title)}</h1> */}
             <h2>We help you blend your business knowledge into coaching towards a winning coaching career.</h2>
             <div className="accredited-by">
               <strong>Accredited by</strong>
