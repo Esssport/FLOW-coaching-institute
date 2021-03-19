@@ -29,10 +29,10 @@ export default function Home() {
 
   //TODO: Get strapi address from environment varriables, remove hardcoded localhost
 
-  const strapiURL = "http://localhost:1337/"
-  const pagePromise = axios.get(strapiURL + "pages")
-  const page = getPageFromPath("/", pagePromise)
-  console.log("TITLE", page.title)
+  // const strapiURL = "http://localhost:1337/"
+  // const pagePromise = axios.get(strapiURL + "pages")
+  // const page = getPageFromPath("/", pagePromise)
+  // console.log("TITLE")
   // const pages = await pagePromise;
   
 
