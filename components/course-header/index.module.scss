@@ -1,0 +1,45 @@
+@import "/styles/variables";
+
+.header {
+  padding: 253px 0 0;
+  position: relative;
+  background-image: url("https://static.overlay-tech.com/assets/14925f01-a4fe-40dc-85f8-e53e9a718abb.png");
+  background-size: 100% 100%;
+}
+.bgGradient {
+  width: 1440px;
+  height: 725px;
+  background: linear-gradient(
+    180deg,
+    $transparent-black 3%,
+    $white 60%
+  );
+  position: relative;
+}
+.courseTitle {
+  height: 185px;
+  width: 1110px;
+  @include spartan-65-bold;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 165px;
+  bottom: 216px;
+}
+.courseDescription {
+  height: 114px;
+  width: 1031px;
+  @include spartan-32-medium;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 204.5px;
+  bottom: 72px;
+}
+.iconPlay {
+  position: absolute;
+  left: 589px;
+  top: 227px;
+}

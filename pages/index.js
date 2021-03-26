@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Navbar from '../components/nav-bar'
@@ -7,14 +6,16 @@ import CustomSlider from '../components/custom-slider'
 import CtaBanner from '../components/cta-banner'
 import Tile from "../components/tile"
 import ProgramTile from "../components/program-tile"
-import  axios from "axios"
+import axios from "axios"
+import Layout from "../components/layout"
+import TrustedBrands from "../components/trusted-brands";
 
 async function getPageFromPath(path, promise) {
   const data = await promise;
   const array = data.data
   for (let i = 0; i < array.length; i++) {
     if (array[i].path === path)
-    return array[i]
+      return array[i]
   }
 }
 
@@ -34,18 +35,11 @@ export default function Home() {
   // const page = getPageFromPath("/", pagePromise)
   // console.log("TITLE")
   // const pages = await pagePromise;
-  
+
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Flow Coaching Institute</title>
-        <link rel="icon" href="/favicon.svg" />
-        <style>@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700;800;900&display=swap');</style>
-
-      </Head>
-      <main className={styles.main}>
-        <Navbar />
+    <>
+      <Layout>
         <div className="banner">
           <div className="banner-description">
             <h1>Welcome To Our <br />Flow World</h1>
@@ -83,8 +77,7 @@ export default function Home() {
             <CustomSlider tileType="program-tiles">
               <ProgramTile />
             </CustomSlider>
-            <h1>TRUSTED BY BRANDS</h1>
-            <img src="/third-party/companies_section.svg" alt="trusted-companies" className="trusted-companies"></img>
+            <TrustedBrands />
             <div className="events">
               <div className="description">
                 <h1>UPCOMING<br />EVENTS</h1>
@@ -200,11 +193,7 @@ export default function Home() {
             </p>
           </a>
         </div> */}
-      </main>
-
-      <footer className={styles.footer}>
-
-      </footer>
-    </div>
+      </Layout>
+    </>
   )
 }

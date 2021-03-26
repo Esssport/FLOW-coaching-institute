@@ -1,11 +1,30 @@
-// @font-face {
-//   font-family: Spartan;
-//   src: url(https://fonts.googleapis.com/css?family=Spartan);
+@import "variables";
+
+// // mixins.scss
+// @mixin isMobile() {
+//   @media only screen and (max-width: 1023px) {
+//     @content;
+//   }
 // }
 
-$Primary-color: #4A43B3;
-$Primary-border: 5px outset rgba(159, 159, 159, 0.461);
-$Space-normal: 38px;
+// @mixin isDesktop() {
+//   @media only screen and (min-width: 1024px) {
+//     @content;
+//   }
+// }
+
+// // Merged style (in your project)
+// .container {
+//   display: flex;
+//   flex-direction: row;
+//   @include isDesktop {
+//     background-color: blue;
+//   }
+//   @include isMobile {
+//     flex-direction: column;
+//     border-radius: 6px;
+//   }
+// }
 
 html {
   height: 100%;
@@ -23,6 +42,7 @@ body {
 
 
 Nav {
+  z-index: 20;
   padding: 10px 0;
   width: 100%;
   justify-content: center;

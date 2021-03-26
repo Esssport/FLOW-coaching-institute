@@ -1,0 +1,36 @@
+@import "/styles/variables";
+
+
+.customerStats {
+  padding: 31px 117.5px 14px 132px;
+  display: flex;
+  align-items: flex-start;
+}
+.section {
+  padding: 52.5px 0;
+  display: flex;
+  align-items: center;
+}
+.successRate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:not(:last-of-type) {
+    margin-right: 154.5px;
+  }
+}
+.number {
+  color: $dark-slate-blue;
+  margin-bottom: 30px;
+  @include spartan-100-bold;
+}
+.statsTitle {
+  color: $black;
+  @include spartan-24-semi-bold;
+}
+.numberTwo {
+  color: $dark-slate-blue;
+  text-align: center;
+  margin-bottom: 30px;
+  @include spartan-100-bold;
+}

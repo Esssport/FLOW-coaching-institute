@@ -1,0 +1,23 @@
+@import "/styles/variables";
+
+
+.actpBanner {
+  background-color: $ghost-white;
+  padding: 37px 46px 33px 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.iconlyBoldMedal {
+  margin-right: 55px;
+}
+.actpBannerText {
+  height: 138px;
+  width: 1108px;
+  color: $black;
+  display: flex;
+  @include spartan-32-bold;
+}

@@ -1,0 +1,32 @@
+@import "/styles/variables";
+
+.nextCourseSection {
+    padding: 0 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nextCourseGroup {
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+  }
+  .iconRipples {
+    margin-right: 45px;
+  }
+  .nextCourseTitle {
+    @include spartan-32-bold;
+    color: $medium-slate-blue;
+  }
+  .buttons {
+    display: flex;
+    align-items: flex-start;
+  }
+  .applyBtn {
+    margin-right: 45px;
+    height: 56px;
+  }
+  .contactUsBtn {
+    width: 118px;
+    height: 20px;
+  }

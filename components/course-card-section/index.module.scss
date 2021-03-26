@@ -1,0 +1,27 @@
+@import "/styles/variables";
+
+
+.courseOverviewSection {
+  padding: 20px 76px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sectionTitle {
+  color: $black;
+  margin-bottom: 75px;
+  @include roboto-slab-75-bold;
+}
+.rowOne {
+  display: flex;
+  align-items: flex-start;
+  &:not(:last-of-type) {
+    margin-bottom: 75px;
+  }
+}
+.cardOne {
+  height: 629px;
+  &:not(:last-of-type) {
+    margin-right: 124px;
+  }
+}

@@ -1,0 +1,31 @@
+@import "/styles/variables";
+
+.courseOverviewSection {
+  padding: 20px 132px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.courseOverviewTitle {
+  color: $black;
+  margin-bottom: 30px;
+  @include roboto-slab-60-bold;
+}
+.accreditedSection {
+  margin-bottom: 30px;
+  width: 736px;
+}
+.courseOverviewDescription {
+  height: 364px;
+  width: 1208px;
+  display: flex;
+  color: $black;
+  @include spartan-24-medium;
+  & .courseOverviewDescriptionEmphasis2 {
+    font-family: "Spartan";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 70px;
+    color: $black;
+  }
+}

@@ -1,0 +1,75 @@
+@import "/styles/variables";
+
+.cardOne {
+  padding: 3px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.headerImage {
+  margin-bottom: 15px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+.frame988 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  color: rgba(45, 52, 54, 1);
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  @include spartan-32-bold-line56;
+}
+.subtitle {
+  color: $medium-slate-blue;
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+  @include spartan-18-bold;
+}
+.item05 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  align-self: stretch;
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+.checkIcon {
+  background-color: $yellow-dark;
+  margin-right: 15px;
+  border-radius: 999px;
+  padding: 4.8px;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(48px);
+}
+.iconCheck {
+  padding: 7.84px 6.72px 8.4px;
+  display: flex;
+  align-items: center;
+}
+.text {
+  color: rgba(92, 92, 92, 1);
+  flex: 1;
+  @include spartan-16-regular;
+}
+.checkIconTwo {
+  background-color: $yellow-dark;
+  margin-right: 16px;
+  border-radius: 999px;
+  padding: 4.8px;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(48px);
+}

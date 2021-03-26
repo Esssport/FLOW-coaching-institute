@@ -1,0 +1,70 @@
+@import "/styles/variables";
+
+
+.credlyBadgeBanner {
+  padding: 86px 0 105px;
+}
+
+.buttons {
+  padding: 10px 11px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 293px;
+  bottom: 8px;
+}
+
+.learnmoreBtn1 {
+  margin-bottom: 20px;
+  width: 372px;
+}
+
+.contactUsBtn {
+  width: 372px;
+  @include spartan-16-semi-bold;
+  color: $black;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.flexWrapperOne {
+  background-color: $royal-blue;
+  padding: 40px 67px 42px 71px;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.badgeIcon {
+  margin-right: 142px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  height: 83px;
+  width: 774px;
+  @include roboto-slab-60-black;
+  color: $white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.description {
+  height: 207px;
+  width: 701px;
+  @include spartan-32-regular-line68;
+  color: $white;
+  display: flex;
+
+}
