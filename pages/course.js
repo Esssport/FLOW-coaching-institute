@@ -8,6 +8,8 @@ import CustomerStats from "../components/customer-stats"
 import CourseFeatures from "../components/course-features"
 import TrustedBrands from "../components/trusted-brands"
 import CourseCardSection from "../components/course-card-section"
+import ApplyNowSection from "../components/apply-now-section"
+import CredlyBadgeBanner from "../components/banner-badge"
 
 const Course = props => {
     return (
@@ -17,9 +19,11 @@ const Course = props => {
             <CourseOverviewSection />
             <ACTPBanner />
             <CustomerStats />
+            <CredlyBadgeBanner />
             <CourseFeatures />
             <TrustedBrands />
             <CourseCardSection />
+            <ApplyNowSection />
         </Layout>
     )
 }

@@ -1,0 +1,18 @@
+@import "/styles/variables";
+
+.getInTouchBtn {
+  min-width: 370px;
+  margin-right: 5%;
+  background-color: $blue-violet;
+  border-radius: 10px;
+  padding: 5px;
+  display: inline-block;
+  align-items: center;
+}
+.getintouchBtn {
+  color: $white;
+  flex: 1;
+  text-align: center;
+  letter-spacing: -0.9px;
+  @include spartan-30-bold;
+}

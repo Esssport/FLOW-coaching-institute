@@ -1,6 +1,7 @@
 import styles from '../components/layout.module.css'
 import Navbar from "./nav-bar"
 import Head from 'next/head'
+import Footer from '../components/footer'
 
 interface props {
     children: any;
@@ -18,7 +19,8 @@ export default function Layout({ children }: props) {
                     <Navbar />
                     {children}
                 </main>
-                <footer className={styles.footer}>
+                <footer>
+                    <Footer />
                 </footer>
             </div>
         </>

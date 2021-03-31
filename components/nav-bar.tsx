@@ -9,7 +9,7 @@ export default function Navbar() {
                     <Link href="/">
                         <a>Become a Coach Now</a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/course">
                         <a>Online Certifications <img src="/arrow-down.svg" className='arrow-down' alt="arrow-down"/></a>
                     </Link>
                     <Link href="/">

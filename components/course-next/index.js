@@ -3,7 +3,7 @@
 // Here an example: https://gist.github.com/Miniplop/8f87608f8100e758fa5a4eb46f9d151f
 
 import React from "react";
-// import { ApplyBtn, ContactUsBtn } from "components";
+import GroupButtonsCTA from "../group-buttons-cta";
 import styles from "./index.module.scss";
 
 const CourseNextSection = ({
@@ -11,8 +11,7 @@ const CourseNextSection = ({
   nextCourseTitle = "Next course is in 7 days"
 }) => {
   return (
-    <div className={styles.CourseNextSection}>
-      <div className={styles.nextCourseGroup}>
+    <div className={styles.nextCourseSection}>
         <img
           alt=""
           className={styles.iconRipples}
@@ -21,11 +20,7 @@ const CourseNextSection = ({
         <p className={styles.nextCourseTitle}>
           {nextCourseTitle}
         </p>
-      </div>
-      <div className={styles.buttons}>
-        {/* <ApplyBtn className={styles.applyBtn} />
-        <ContactUsBtn className={styles.contactUsBtn} /> */}
-      </div>
+        <GroupButtonsCTA />
     </div>
   );
 };

@@ -1,0 +1,47 @@
+@import "/styles/variables";
+
+
+.applyNowSection {
+  padding: 191px 0 0;
+}
+.flexWrapperOne {
+  background-color: $papaya-whip;
+  padding: 0 0 5px 436px;
+  position: relative;
+}
+.investSection {
+  padding: 90px 41px 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  color: $black;
+  align-self: stretch;
+  margin-bottom: 34px;
+  @include spartan-55-extra-bold;
+}
+.description {
+  color: $black;
+  align-self: stretch;
+  margin-bottom: 34px;
+  @include spartan-30-regular;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.getInTouchBtn {
+  margin-right: 48px;
+  width: 200px;
+  height: 36px;
+}
+.transparentButton {
+  width: 172px;
+}
+.image {
+  position: relative;
+  left: 0;
+  top: -679px;
+}
