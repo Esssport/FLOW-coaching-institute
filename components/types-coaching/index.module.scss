@@ -1,0 +1,40 @@
+@import "/styles/variables";
+
+.aboutChooseCoachingType {
+  padding: 139px 1px 98px 0;
+  box-shadow: 0 10px 20px 0 $transparent-black-2 inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    $blue-violet 0%,
+    $black-7 100%
+  );
+}
+.header {
+  margin-bottom: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1128px;
+}
+.sectionTitle {
+  height: 130px;
+  width: 885px;
+  color: $white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 59px;
+  @include roboto-slab-50-bold;
+}
+.sectionSubtitle {
+  max-width: 1143px;
+  color: $white;
+  @include spartan-30-medium-line70;
+}
+.featuresSection {
+  &:not(:last-of-type) {
+    margin-bottom: 91px;
+  }
+}

@@ -24,10 +24,6 @@ $Primary-color: #4A43B3;
 @include font('Spartan', '../public/fonts/Spartan/Spartan');
 @include font('Roboto Slab', '../public/fonts/Roboto Slab/Roboto Slab');
 
-
-
-
-
 // This is the project stylesheet
 
 // Colors
@@ -35,20 +31,45 @@ $additional-text: rgba(110, 121, 140, 1);
 $black: rgba(0, 0, 0, 1);
 $black-1: rgba(7, 6, 6, 1);
 $black-4: rgba(32, 32, 32, 1);
+$black-5: rgba(32, 14, 50, 1);
+$black-6: rgba(6, 18, 34, 1);
+$black-7: rgba(15, 6, 37, 1);
+$black-8: rgba(16, 7, 40, 1);
+$black-9: rgba(33, 33, 33, 1);
 $blue-violet: rgba(82, 34, 208, 1);
 $body-text: rgba(55, 74, 89, 1);
+$dark-cyan: rgba(5, 180, 108, 1);
 $dark-gray: rgba(169, 169, 169, 1);
+$dark-gray-2: rgba(160, 160, 160, 1);
+$dark-gray-3: rgba(159, 159, 159, 1);
+$dark-gray-4: rgba(177, 177, 177, 1);
+$dark-gray-5: rgba(173, 173, 173, 1);
+$dark-gray-6: rgba(163, 163, 163, 1);
 $dark-orange: rgba(243, 135, 4, 1);
 $dark-slate-blue: rgba(70, 67, 176, 1);
 $dark-slate-blue-2: rgba(74, 67, 179, 1);
+$dark-slate-gray: rgba(45, 52, 54, 1);
+$dark-slate-gray-2: rgba(66, 66, 66, 1);
+$dark-slate-gray-3: rgba(45, 45, 45, 1);
+$dark-slate-gray-4: rgba(37, 37, 37, 1);
 $dim-gray: rgba(86, 86, 86, 1);
+$dim-gray-2: rgba(115, 115, 115, 1);
+$dim-gray-3: rgba(88, 89, 92, 1);
 $gainsboro: rgba(222, 222, 222, 1);
+$gainsboro-2: rgba(226, 226, 226, 1);
+$gainsboro-3: rgba(231, 231, 231, 1);
 $ghost-white: rgba(249, 249, 249, 1);
+$ghost-white-2: rgba(247, 250, 253, 1);
+$goldenrod: rgba(245, 150, 35, 1);
 $gray: rgba(133, 133, 133, 1);
 $gray-1: rgba(51, 51, 51, 1);
+$gray-2: rgba(128, 128, 128, 1);
 $green: rgba(15, 169, 88, 1);
+$grey-aa: rgba(118, 118, 118, 1);
+$grey-aa-large: rgba(148, 148, 148, 1);
 $heading-text: rgba(8, 31, 50, 1);
 $light-grey: rgba(212, 212, 212, 1);
+$light-grey-2: rgba(211, 211, 211, 1);
 $light-slate-gray: rgba(145, 145, 148, 1);
 $linen: rgba(255, 239, 226, 1);
 $medium-slate-blue: rgba(108, 92, 231, 1);
@@ -63,21 +84,41 @@ $red-1: rgba(255, 0, 0, 1);
 $royal-blue: rgba(70, 65, 208, 1);
 $royal-blue-2: rgba(41, 113, 210, 1);
 $sandy-brown: rgba(250, 181, 80, 1);
+$sandy-brown-1: rgba(254, 189, 59, 1);
+$sandy-brown-2: rgba(251, 197, 109, 1);
 $secondary: rgba(255, 66, 66, 1);
 $silver: rgba(182, 182, 182, 1);
 $snow: rgba(250, 250, 250, 1);
+$text-gray-900: rgba(24, 25, 31, 1);
 $tomato: rgba(235, 87, 87, 1);
 $tomato-2: rgba(236, 97, 91, 1);
 $transparent-black: rgba(11, 29, 38, 0);
 $transparent-black-2: rgba(0, 0, 0, 0.25);
+$transparent-black-3: rgba(0, 0, 0, 0);
+$transparent-black-4: rgba(0, 0, 0, 0.05);
+$transparent-blue-violet: rgba(82, 34, 208, 0.5);
 $transparent-midnight-blue: rgba(3, 10, 79, 0.63);
 $transparent-sandy-brown: rgba(250, 181, 80, 0);
 $transparent-silver: rgba(190, 190, 190, 0.25);
+$transparent-white: rgba(255, 255, 255, 0);
+$transparent-white-2: rgba(255, 255, 255, 0.55);
+$transparent-white-smoke: rgba(249, 248, 248, 0.15);
 $white: rgba(255, 255, 255, 1);
 $white-smoke: rgba(243, 246, 249, 1);
+$white-smoke-2: rgba(248, 248, 248, 1);
+$white-smoke-3: rgba(243, 243, 243, 1);
+$white-smoke-4: rgba(236, 236, 236, 1);
+$white-smoke-5: rgba(244, 244, 244, 1);
+$white-smoke-6: rgba(242, 242, 242, 1);
 $yellow-dark: rgba(253, 203, 110, 1);
 
 // Typographies
+@mixin gilroy-bold-32-regular {
+  font-family: "Gilroy-Bold";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+}
 @mixin open-sans-8-bold {
   font-family: "Open Sans";
   font-size: 8px;
@@ -102,6 +143,18 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 19px;
 }
+@mixin roboto-slab-16-bold {
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+}
+@mixin roboto-slab-16-bold-line22 {
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
 @mixin roboto-slab-18-black {
   font-family: "Roboto Slab";
   font-size: 18px;
@@ -119,6 +172,36 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-size: 20px;
   font-weight: 900;
   line-height: 46px;
+}
+@mixin roboto-slab-24-black {
+  font-family: "Roboto Slab";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 33px;
+}
+@mixin roboto-slab-24-bold {
+  font-family: "Roboto Slab";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin roboto-slab-24-bold-line32 {
+  font-family: "Roboto Slab";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+@mixin roboto-slab-24-bold-line46 {
+  font-family: "Roboto Slab";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 46px;
+}
+@mixin roboto-slab-24-light {
+  font-family: "Roboto Slab";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
 }
 @mixin roboto-slab-28-black {
   font-family: "Roboto Slab";
@@ -150,6 +233,12 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 900;
   line-height: 72px;
 }
+@mixin roboto-slab-30-regular {
+  font-family: "Roboto Slab";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 72px;
+}
 @mixin roboto-slab-31-bold {
   font-family: "Roboto Slab";
   font-size: 31px;
@@ -162,11 +251,95 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 900;
   line-height: 77px;
 }
+@mixin roboto-slab-32-black-line43 {
+  font-family: "Roboto Slab";
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 43px;
+}
+@mixin roboto-slab-32-bold {
+  font-family: "Roboto Slab";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin roboto-slab-32-bold-line32 {
+  font-family: "Roboto Slab";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+@mixin roboto-slab-32-bold-line46 {
+  font-family: "Roboto Slab";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+}
+@mixin roboto-slab-32-bold-line57 {
+  font-family: "Roboto Slab";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 57px;
+}
+@mixin roboto-slab-34-bold {
+  font-family: "Roboto Slab";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 35px;
+}
+@mixin roboto-slab-35-bold {
+  font-family: "Roboto Slab";
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 51px;
+}
+@mixin roboto-slab-40-bold {
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+}
+@mixin roboto-slab-44-black {
+  font-family: "Roboto Slab";
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 106px;
+}
 @mixin roboto-slab-50-black {
   font-family: "Roboto Slab";
   font-size: 50px;
   font-weight: 900;
   line-height: 71px;
+}
+@mixin roboto-slab-50-black-line64 {
+  font-family: "Roboto Slab";
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 64px;
+}
+@mixin roboto-slab-50-bold {
+  font-family: "Roboto Slab";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 89px;
+}
+@mixin roboto-slab-50-bold-2 {
+  font-family: "Roboto Slab";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin roboto-slab-54-bold {
+  font-family: "Roboto Slab";
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 79px;
+}
+@mixin roboto-slab-55-bold {
+  font-family: "Roboto Slab";
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 46px;
 }
 @mixin roboto-slab-60-black {
   font-family: "Roboto Slab";
@@ -174,11 +347,29 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 900;
   line-height: 43px;
 }
+@mixin roboto-slab-60-black-line83 {
+  font-family: "Roboto Slab";
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 83px;
+}
 @mixin roboto-slab-60-bold {
   font-family: "Roboto Slab";
   font-size: 60px;
   font-weight: 700;
   line-height: 53px;
+}
+@mixin roboto-slab-60-bold-line88 {
+  font-family: "Roboto Slab";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+}
+@mixin roboto-slab-65-bold {
+  font-family: "Roboto Slab";
+  font-size: 65px;
+  font-weight: 700;
+  line-height: normal;
 }
 @mixin roboto-slab-75-black {
   font-family: "Roboto Slab";
@@ -192,6 +383,48 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 53px;
 }
+@mixin spartan-10-bold {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+}
+@mixin spartan-10-bold-1 {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin spartan-10-bold-line3 {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 3px;
+}
+@mixin spartan-10-bold-line40 {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 40px;
+}
+@mixin spartan-10-bold-line9 {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 9px;
+}
+@mixin spartan-10-medium {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 21px;
+}
+@mixin spartan-10-medium-line18 {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 18px;
+}
 @mixin spartan-10-regular {
   font-family: "Spartan";
   font-size: 10px;
@@ -203,6 +436,12 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-size: 10px;
   font-weight: 400;
   line-height: normal;
+}
+@mixin spartan-10-semi-bold {
+  font-family: "Spartan";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 24px;
 }
 @mixin spartan-100-bold {
   font-family: "Spartan";
@@ -222,6 +461,18 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: normal;
 }
+@mixin spartan-12-bold-line11 {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11px;
+}
+@mixin spartan-12-bold-line14 {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
 @mixin spartan-12-bold-line16 {
   font-family: "Spartan";
   font-size: 12px;
@@ -240,17 +491,41 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 26px;
 }
+@mixin spartan-12-bold-line29 {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 29px;
+}
 @mixin spartan-12-bold-line32 {
   font-family: "Spartan";
   font-size: 12px;
   font-weight: 700;
   line-height: 32px;
 }
+@mixin spartan-12-bold-line36 {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 36px;
+}
 @mixin spartan-12-bold-line71 {
   font-family: "Spartan";
   font-size: 12px;
   font-weight: 700;
   line-height: 71px;
+}
+@mixin spartan-12-medium {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+@mixin spartan-12-medium-line31 {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 31px;
 }
 @mixin spartan-12-regular {
   font-family: "Spartan";
@@ -263,6 +538,18 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+}
+@mixin spartan-12-regular-line14 {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+@mixin spartan-12-regular-line21 {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
 }
 @mixin spartan-12-regular-line22 {
   font-family: "Spartan";
@@ -300,11 +587,23 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 600;
   line-height: 30px;
 }
+@mixin spartan-12-semi-bold-line20 {
+  font-family: "Spartan";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
 @mixin spartan-12-semi-bold-line25 {
   font-family: "Spartan";
   font-size: 12px;
   font-weight: 600;
   line-height: 25px;
+}
+@mixin spartan-125-black {
+  font-family: "Spartan";
+  font-size: 125px;
+  font-weight: 900;
+  line-height: 109px;
 }
 @mixin spartan-14-bold {
   font-family: "Spartan";
@@ -354,6 +653,12 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 32px;
 }
+@mixin spartan-14-bold-line34 {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 34px;
+}
 @mixin spartan-14-bold-line36 {
   font-family: "Spartan";
   font-size: 14px;
@@ -366,17 +671,41 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 500;
   line-height: 30px;
 }
+@mixin spartan-14-medium-line29 {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 29px;
+}
 @mixin spartan-14-regular {
   font-family: "Spartan";
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
 }
+@mixin spartan-14-regular-1 {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
 @mixin spartan-14-regular-line14 {
   font-family: "Spartan";
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+}
+@mixin spartan-14-regular-line17 {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+@mixin spartan-14-regular-line22 {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 }
 @mixin spartan-14-regular-line24 {
   font-family: "Spartan";
@@ -396,6 +725,36 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 400;
   line-height: 32px;
 }
+@mixin spartan-14-regular-line34 {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+}
+@mixin spartan-14-semi-bold {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+@mixin spartan-14-semi-bold-2 {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+@mixin spartan-15-bold {
+  font-family: "Spartan";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+@mixin spartan-15-regular {
+  font-family: "Spartan";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
 @mixin spartan-150-black {
   font-family: "Spartan";
   font-size: 150px;
@@ -407,6 +766,48 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
+}
+@mixin spartan-16-bold-1 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin spartan-16-bold-line19 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+@mixin spartan-16-bold-line22 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+@mixin spartan-16-bold-line26 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+@mixin spartan-16-bold-line28 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+@mixin spartan-16-bold-line36 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 36px;
+}
+@mixin spartan-16-bold-line39 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 39px;
 }
 @mixin spartan-16-bold-line40 {
   font-family: "Spartan";
@@ -432,11 +833,41 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 400;
   line-height: 32px;
 }
+@mixin spartan-16-regular-1 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin spartan-16-regular-line22 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+@mixin spartan-16-regular-line26 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
 @mixin spartan-16-regular-line27 {
   font-family: "Spartan";
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
+}
+@mixin spartan-16-regular-line30 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+@mixin spartan-16-regular-line40 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
 }
 @mixin spartan-16-semi-bold {
   font-family: "Spartan";
@@ -444,10 +875,28 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 600;
   line-height: 32px;
 }
+@mixin spartan-16-semi-bold-line23 {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+}
 @mixin spartan-16-semi-bold-line36 {
   font-family: "Spartan";
   font-size: 16px;
   font-weight: 600;
+  line-height: 36px;
+}
+@mixin spartan-17-bold {
+  font-family: "Spartan";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 31px;
+}
+@mixin spartan-17-bold-line36 {
+  font-family: "Spartan";
+  font-size: 17px;
+  font-weight: 700;
   line-height: 36px;
 }
 @mixin spartan-18-black {
@@ -480,6 +929,12 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 24px;
 }
+@mixin spartan-18-bold-line25 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
 @mixin spartan-18-bold-line26 {
   font-family: "Spartan";
   font-size: 18px;
@@ -504,17 +959,47 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 36px;
 }
+@mixin spartan-18-medium {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 42px;
+}
 @mixin spartan-18-regular {
   font-family: "Spartan";
   font-size: 18px;
   font-weight: 400;
   line-height: 31px;
 }
+@mixin spartan-18-regular-1 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin spartan-18-regular-line22 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+@mixin spartan-18-regular-line25 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
 @mixin spartan-18-regular-line32 {
   font-family: "Spartan";
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
+}
+@mixin spartan-18-regular-line33 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
 }
 @mixin spartan-18-regular-line34 {
   font-family: "Spartan";
@@ -528,11 +1013,29 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 400;
   line-height: 36px;
 }
+@mixin spartan-18-regular-line41 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 41px;
+}
+@mixin spartan-18-regular-line45 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 45px;
+}
 @mixin spartan-18-semi-bold {
   font-family: "Spartan";
   font-size: 18px;
   font-weight: 600;
   line-height: 33px;
+}
+@mixin spartan-18-semi-bold-line32 {
+  font-family: "Spartan";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
 }
 @mixin spartan-19-bold {
   font-family: "Spartan";
@@ -558,6 +1061,18 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 30px;
 }
+@mixin spartan-20-bold-1 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin spartan-20-bold-line24 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
 @mixin spartan-20-bold-line29 {
   font-family: "Spartan";
   font-size: 20px;
@@ -570,17 +1085,71 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 36px;
 }
+@mixin spartan-20-bold-line48 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 48px;
+}
+@mixin spartan-20-bold-line71 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 71px;
+}
 @mixin spartan-20-medium {
   font-family: "Spartan";
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
 }
+@mixin spartan-20-medium-1 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin spartan-20-medium-line35 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 35px;
+}
+@mixin spartan-20-medium-line44 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 44px;
+}
 @mixin spartan-20-regular {
   font-family: "Spartan";
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
+}
+@mixin spartan-20-regular-line24 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+@mixin spartan-20-regular-line37 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 37px;
+}
+@mixin spartan-20-semi-bold {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+@mixin spartan-20-semi-bold-line32 {
+  font-family: "Spartan";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
 }
 @mixin spartan-22-black {
   font-family: "Spartan";
@@ -594,11 +1163,29 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 28px;
 }
+@mixin spartan-22-bold-line29 {
+  font-family: "Spartan";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+}
+@mixin spartan-22-bold-line36 {
+  font-family: "Spartan";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+}
 @mixin spartan-22-regular {
   font-family: "Spartan";
   font-size: 22px;
   font-weight: 400;
   line-height: normal;
+}
+@mixin spartan-22-regular-line38 {
+  font-family: "Spartan";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 38px;
 }
 @mixin spartan-24-black {
   font-family: "Spartan";
@@ -630,6 +1217,12 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 29px;
 }
+@mixin spartan-24-bold-line31 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+}
 @mixin spartan-24-bold-line32 {
   font-family: "Spartan";
   font-size: 24px;
@@ -654,6 +1247,24 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 36px;
 }
+@mixin spartan-24-bold-line41 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 41px;
+}
+@mixin spartan-24-bold-line44 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 44px;
+}
+@mixin spartan-24-bold-line45 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 45px;
+}
 @mixin spartan-24-bold-line56 {
   font-family: "Spartan";
   font-size: 24px;
@@ -671,6 +1282,18 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-size: 24px;
   font-weight: 700;
   line-height: 71px;
+}
+@mixin spartan-24-extra-bold {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 64px;
+}
+@mixin spartan-24-extra-bold-line42 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 42px;
 }
 @mixin spartan-24-medium {
   font-family: "Spartan";
@@ -696,11 +1319,53 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 400;
   line-height: normal;
 }
+@mixin spartan-24-regular-line29 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+@mixin spartan-24-regular-line36 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+@mixin spartan-24-regular-line39 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 39px;
+}
+@mixin spartan-24-regular-line44 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+}
+@mixin spartan-24-regular-line45 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 45px;
+}
 @mixin spartan-24-regular-line48 {
   font-family: "Spartan";
   font-size: 24px;
   font-weight: 400;
   line-height: 48px;
+}
+@mixin spartan-24-regular-line61 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 61px;
+}
+@mixin spartan-24-regular-line70 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 70px;
 }
 @mixin spartan-24-semi-bold {
   font-family: "Spartan";
@@ -708,11 +1373,53 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 600;
   line-height: 45px;
 }
+@mixin spartan-24-semi-bold-line32 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+@mixin spartan-24-semi-bold-line41 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 41px;
+}
+@mixin spartan-24-semi-bold-line52 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 52px;
+}
 @mixin spartan-25-black {
   font-family: "Spartan";
   font-size: 25px;
   font-weight: 900;
   line-height: 22px;
+}
+@mixin spartan-26-black {
+  font-family: "Spartan";
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 44px;
+}
+@mixin spartan-26-regular {
+  font-family: "Spartan";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 63px;
+}
+@mixin spartan-28-black {
+  font-family: "Spartan";
+  font-size: 28px;
+  font-weight: 900;
+  line-height: normal;
+}
+@mixin spartan-28-black-line44 {
+  font-family: "Spartan";
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 44px;
 }
 @mixin spartan-28-bold {
   font-family: "Spartan";
@@ -720,11 +1427,29 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 71px;
 }
+@mixin spartan-28-bold-1 {
+  font-family: "Spartan";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin spartan-28-bold-line34 {
+  font-family: "Spartan";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+}
 @mixin spartan-30-bold {
   font-family: "Spartan";
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+}
+@mixin spartan-30-bold-1 {
+  font-family: "Spartan";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
 }
 @mixin spartan-30-bold-line43 {
   font-family: "Spartan";
@@ -732,11 +1457,29 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 43px;
 }
+@mixin spartan-30-bold-line46 {
+  font-family: "Spartan";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+}
+@mixin spartan-30-bold-line54 {
+  font-family: "Spartan";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54px;
+}
 @mixin spartan-30-medium {
   font-family: "Spartan";
   font-size: 30px;
   font-weight: 500;
   line-height: 72px;
+}
+@mixin spartan-30-medium-line70 {
+  font-family: "Spartan";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 70px;
 }
 @mixin spartan-30-regular {
   font-family: "Spartan";
@@ -750,11 +1493,29 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 400;
   line-height: 36px;
 }
+@mixin spartan-32-black {
+  font-family: "Spartan";
+  font-size: 32px;
+  font-weight: 900;
+  line-height: normal;
+}
 @mixin spartan-32-bold {
   font-family: "Spartan";
   font-size: 32px;
   font-weight: 700;
   line-height: 71px;
+}
+@mixin spartan-32-bold-1 {
+  font-family: "Spartan";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin spartan-32-bold-line38 {
+  font-family: "Spartan";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
 }
 @mixin spartan-32-bold-line42 {
   font-family: "Spartan";
@@ -768,11 +1529,23 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 46px;
 }
+@mixin spartan-32-bold-line50 {
+  font-family: "Spartan";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 50px;
+}
 @mixin spartan-32-bold-line56 {
   font-family: "Spartan";
   font-size: 32px;
   font-weight: 700;
   line-height: 56px;
+}
+@mixin spartan-32-bold-line77 {
+  font-family: "Spartan";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 77px;
 }
 @mixin spartan-32-extra-bold {
   font-family: "Spartan";
@@ -791,6 +1564,12 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-size: 32px;
   font-weight: 400;
   line-height: 71px;
+}
+@mixin spartan-32-regular-line59 {
+  font-family: "Spartan";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 59px;
 }
 @mixin spartan-32-regular-line68 {
   font-family: "Spartan";
@@ -822,17 +1601,59 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: normal;
 }
+@mixin spartan-44-black {
+  font-family: "Spartan";
+  font-size: 44px;
+  font-weight: 900;
+  line-height: normal;
+}
+@mixin spartan-44-black-line81 {
+  font-family: "Spartan";
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 81px;
+}
 @mixin spartan-44-bold {
   font-family: "Spartan";
   font-size: 44px;
   font-weight: 700;
   line-height: 63px;
 }
+@mixin spartan-44-bold-line62 {
+  font-family: "Spartan";
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 62px;
+}
 @mixin spartan-45-black {
   font-family: "Spartan";
   font-size: 45px;
   font-weight: 900;
   line-height: normal;
+}
+@mixin spartan-45-bold {
+  font-family: "Spartan";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 70px;
+}
+@mixin spartan-45-regular {
+  font-family: "Spartan";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 76px;
+}
+@mixin spartan-48-extra-bold {
+  font-family: "Spartan";
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+}
+@mixin spartan-50-black {
+  font-family: "Spartan";
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 121px;
 }
 @mixin spartan-50-bold {
   font-family: "Spartan";
@@ -852,11 +1673,23 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 44px;
 }
+@mixin spartan-50-bold-line63 {
+  font-family: "Spartan";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 63px;
+}
 @mixin spartan-55-extra-bold {
   font-family: "Spartan";
   font-size: 55px;
   font-weight: 800;
   line-height: 77px;
+}
+@mixin spartan-60-bold {
+  font-family: "Spartan";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 145px;
 }
 @mixin spartan-65-bold {
   font-family: "Spartan";
@@ -864,11 +1697,23 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 100px;
 }
+@mixin spartan-70-extra-bold {
+  font-family: "Spartan";
+  font-size: 70px;
+  font-weight: 800;
+  line-height: normal;
+}
 @mixin spartan-8-bold {
   font-family: "Spartan";
   font-size: 8px;
   font-weight: 700;
   line-height: 14px;
+}
+@mixin spartan-8-bold-1 {
+  font-family: "Spartan";
+  font-size: 8px;
+  font-weight: 700;
+  line-height: normal;
 }
 @mixin spartan-8-bold-line11 {
   font-family: "Spartan";
@@ -876,9 +1721,21 @@ $yellow-dark: rgba(253, 203, 110, 1);
   font-weight: 700;
   line-height: 11px;
 }
+@mixin spartan-8-bold-line71 {
+  font-family: "Spartan";
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 71px;
+}
 @mixin spartan-8-regular {
   font-family: "Spartan";
   font-size: 8px;
   font-weight: 400;
   line-height: 15px;
+}
+@mixin spartan-8-regular-2 {
+  font-family: "Spartan";
+  font-size: 8px;
+  font-weight: 400;
+  line-height: normal;
 }

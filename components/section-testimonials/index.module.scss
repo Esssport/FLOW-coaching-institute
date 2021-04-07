@@ -1,0 +1,69 @@
+@import "/styles/variables";
+
+
+.headline {
+  padding: 0 1%;
+  font-weight: 900;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #FEC07B 26.7%, #4B45B8 71.16%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.span {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(253, 195, 62, 0) 0%, #FDC23D 49.18%, rgba(253, 236, 46, 0) 100%);
+}
+
+
+.description {
+  font-size: 22px;
+  line-height: 58.08px;
+  padding: 0 2%;
+  text-align: center;
+}
+
+.numberDescription {
+  display: flex;
+  width: 70%;
+  max-width: 1000px;
+  margin: auto;
+
+
+  p {
+    margin-top: 0;
+    align-self: flex-start;
+    text-align: left;
+  }
+}
+
+.number {
+  margin-right: 20px;
+  align-self: flex-start;
+
+  span {
+    display: block;
+  }
+
+  text-align: right;
+
+  .numberSection {
+    color: $Primary-color;
+    font-size: 100px;
+    font-weight: 900;
+  }
+
+  .textSection {
+    color: #A9A9A9;
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: -60px;
+  }
+}

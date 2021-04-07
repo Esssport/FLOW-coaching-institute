@@ -18,14 +18,7 @@
 .courseOverviewDescription {
   height: 364px;
   width: 1208px;
-  display: flex;
   color: $black;
-  @include spartan-24-medium;
-  & .courseOverviewDescriptionEmphasis2 {
-    font-family: "Spartan";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 70px;
-    color: $black;
-  }
+  display: flex;
+  @include spartan-24-regular-line70;
 }

@@ -343,121 +343,6 @@ Nav {
     }
   }
 
-  .program-tile {
-    // filter: drop-shadow(1px 1px 0px black);
-    background-size: cover;
-    border: $Primary-border;
-    padding: 44px;
-    border-radius: 16px;
-    display: inline-block;
-    height: 729px;
-    width: 611px;
-    margin-right: 78px;
-    background-repeat: no-repeat;
-
-    h1 {
-      display: flex;
-      align-items: center;
-      font-size: 30px;
-      margin-top: 127px !important;
-
-      img {
-        margin-right: 10px;
-        height: 60px;
-      }
-    }
-
-    p {
-      text-align: left;
-      white-space: normal;
-      line-height: 37px;
-      font-size: 18px;
-      font-weight: 600;
-    }
-  }
-
-  .program-tiles {
-    margin-top: 50px;
-    // width: 97%;
-  }
-
-  .program-section {
-    padding-left: inherit;
-
-    h1 {
-      margin-top: 150px;
-      text-align: left;
-    }
-
-  }
-
-  .tile {
-    margin-right: 50px;
-    height: 400px;
-    width: 278px;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    display: inline-block;
-    margin-bottom: 100px;
-    white-space: normal !important;
-
-    h1 {
-      left: 10px;
-      top: 200px;
-      font-size: 34px;
-      width: 100px;
-      line-height: 35px;
-      z-index: 2;
-      position: relative;
-    }
-
-    p {
-      top: 200px;
-      left: 10px;
-      position: relative;
-      width: inherit;
-      text-align: left;
-      z-index: 2;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 23.5px;
-    }
-
-    img {
-      position: relative;
-      top: 230px;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-
-    // &:before {
-    //   content: '';
-    //   position: absolute;
-    //   background-image: linear-gradient(to bottom,
-    //       transparent 0px,
-    //       transparent 150px,
-    //       transparent 150px,
-    //       #FFFFFF 400px);
-    //   opacity: 2;
-    //   height: 400px;
-    //   width: inherit;
-    // }
-  }
-
-  .slider {
-    padding: 0 1%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
-
-  .cta-banner-container {
-    margin-top: 150px;
-  }
-
   .cta-banner {
 
     background: #FEBD3B;
@@ -487,9 +372,6 @@ Nav {
       flex: 2;
       align-self: center;
       font-size: 23px;
-      // left: 70%;
-      // bottom: 10%;
-
     }
   }
 
@@ -526,202 +408,6 @@ Nav {
     padding-top: 14px;
 
   }
-
-
-  .events {
-    display: flex;
-    margin-top: 170px;
-    justify-content: space-between;
-    background-image: linear-gradient(to bottom,
-        #f9f9f9 75%,
-        #FFEFDC 1px);
-
-    .date-bar {
-      display: flex;
-      align-content: center;
-      justify-content: space-between;
-      margin-bottom: 20%;
-
-      h1 {
-        line-height: 12px;
-        padding-top: 15px;
-      }
-    }
-
-    h1 {
-      margin-top: 0 !important;
-    }
-
-
-    .description {
-      flex: 3;
-      padding: 0 1%;
-      // flex: 1;
-      // width: 500px;
-      display: inline-block;
-
-
-
-      p {
-        display: inline-block;
-        text-align: left;
-        padding: 0;
-        max-width: 700px;
-      }
-    }
-
-    .event-slider-container {
-      flex: 5;
-      display: inline-block;
-      width: 50%;
-
-    }
-
-    .event-tile {
-      background-image: linear-gradient(to bottom,
-          #FFFFFF 80%,
-          #f9f9f9 400px);
-      background-size: cover;
-      border: solid;
-      padding: 44px;
-      border-radius: 20px;
-      display: inline-block;
-      margin-right: 78px;
-      Width: 563px;
-      Height: 808.75px;
-
-      h1 {
-        display: inline-block;
-
-        width: 68%;
-        font-size: 40px;
-        font-weight: 700;
-        white-space: normal;
-
-
-        &:nth-child(2) {
-
-          &:after {
-            content: "";
-            /* This is necessary for the pseudo element to work. */
-            display: block;
-            /* This will put the pseudo element on its own line. */
-            /* margin: 0 auto; */
-            /* This will center the border. */
-            width: 50%;
-            /* Change this to whatever width you want. */
-            padding-top: 40%;
-            /* This creates some space between the element and the border. */
-            border-bottom: solid;
-            /* This creates the border. Replace black with whatever color you want. */
-          }
-        }
-
-
-        // display: flex;
-
-
-
-        span {
-          line-height: 10px;
-          display: flex;
-          align-content: center;
-
-          // &.day-sub-section {
-          // }
-
-          &.month-sub-section {
-            font-size: 20px;
-            margin-top: 10px;
-            // display: block;
-            // margin-top: -100px;
-          }
-        }
-      }
-
-      small {
-        margin-top: 18px;
-        margin-bottom: 43px;
-        display: block;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 29px;
-      }
-
-      .learn-more-events {
-        font-family: Spartan;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 46px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        color: #2971D2;
-        margin-top: 57px;
-        margin-bottom: 32px;
-        display: inline-block;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      .info {
-        display: flex;
-        // align-items: center;
-        justify-content: center;
-
-        small {
-          margin-bottom: 10px;
-        }
-
-        .sponsor-wrapper {
-          flex: 2;
-
-          // max-width: 200px;
-          img {
-            height: 100px;
-          }
-
-          & {
-            content: "";
-            display: block;
-            width: 50%;
-            height: 50%;
-            border-right: 1px solid #DEDEDE;
-          }
-        }
-
-        .support-wrapper {
-          small {
-            margin-bottom: 10px;
-          }
-
-          padding-left: 20px;
-          flex: 3;
-
-          h1 {
-            width: 100%;
-            text-transform: uppercase;
-            margin-bottom: 0;
-
-            &::after {
-              display: none;
-            }
-          }
-
-          h2 {
-            line-height: 10px;
-          }
-        }
-
-
-
-      }
-    }
-  }
-
 
   .cta-orange {
     // margin-top: 25%;
@@ -843,26 +529,343 @@ Nav {
     background-size: 100% 100%;
   }
 
-  .content-align-center {
-    padding-bottom: 140px;
+}
+
+.content-align-center {
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center !important;
+    margin-top: 150px;
+    padding: 0 1%;
+    font-weight: 900;
+    font-size: 55px;
+  }
+
+  p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 22px;
+    line-height: 58.08px;
+    text-align: center;
+  }
+
+  a {
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+.cta-banner-container {
+  margin-top: 150px;
+}
+
+
+.program-tile {
+  // filter: drop-shadow(1px 1px 0px black);
+  background-size: cover;
+  border: $Primary-border;
+  padding: 44px;
+  border-radius: 16px;
+  display: inline-block;
+  height: 729px;
+  width: 611px;
+  margin-right: 78px;
+  background-repeat: no-repeat;
+
+  h1 {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 127px !important;
 
-    h1 {
-      text-align: center;
-    }
-
-    p {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    a {
-      margin: auto;
-      margin-top: 30px;
+    img {
+      margin-right: 10px;
+      height: 60px;
     }
   }
 
+  p {
+    text-align: left;
+    white-space: normal;
+    line-height: 37px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.program-tiles {
+  margin-top: 50px;
+  // width: 97%;
+}
+
+.program-section {
+  padding-left: inherit;
+
+  h1 {
+    margin-top: 150px;
+    text-align: left;
+  }
+
+}
+
+.tile {
+  margin-right: 50px;
+  height: 400px;
+  width: 278px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 100px;
+  white-space: normal !important;
+
+  h1 {
+    left: 10px;
+    top: 200px;
+    font-size: 34px;
+    width: 100px;
+    line-height: 35px;
+    z-index: 2;
+    position: relative;
+  }
+
+  p {
+    top: 200px;
+    left: 10px;
+    position: relative;
+    width: inherit;
+    text-align: left;
+    z-index: 2;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23.5px;
+  }
+
+  img {
+    position: relative;
+    top: 230px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   background-image: linear-gradient(to bottom,
+  //       transparent 0px,
+  //       transparent 150px,
+  //       transparent 150px,
+  //       #FFFFFF 400px);
+  //   opacity: 2;
+  //   height: 400px;
+  //   width: inherit;
+  // }
+}
+
+.slider {
+  padding: 0 1%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.events {
+  display: flex;
+  margin-top: 170px;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom,
+      #f9f9f9 75%,
+      #FFEFDC 1px);
+
+  .date-bar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 20%;
+
+    h1 {
+      line-height: 12px;
+      padding-top: 15px;
+    }
+  }
+
+  h1 {
+    margin-top: 0 !important;
+  }
+
+
+  .description {
+    flex: 3;
+    padding: 0 1%;
+    // flex: 1;
+    // width: 500px;
+    display: inline-block;
+
+
+
+    p {
+      display: inline-block;
+      text-align: left;
+      padding: 0;
+      max-width: 700px;
+    }
+  }
+
+  .event-slider-container {
+    flex: 5;
+    display: inline-block;
+    width: 50%;
+
+  }
+
+  .event-tile {
+    background-image: linear-gradient(to bottom,
+        #FFFFFF 80%,
+        #f9f9f9 400px);
+    background-size: cover;
+    border: solid;
+    padding: 44px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 78px;
+    Width: 563px;
+    Height: 808.75px;
+
+    h1 {
+      display: inline-block;
+
+      width: 68%;
+      font-size: 40px;
+      font-weight: 700;
+      white-space: normal;
+
+
+      &:nth-child(2) {
+
+        &:after {
+          content: "";
+          /* This is necessary for the pseudo element to work. */
+          display: block;
+          /* This will put the pseudo element on its own line. */
+          /* margin: 0 auto; */
+          /* This will center the border. */
+          width: 50%;
+          /* Change this to whatever width you want. */
+          padding-top: 40%;
+          /* This creates some space between the element and the border. */
+          border-bottom: solid;
+          /* This creates the border. Replace black with whatever color you want. */
+        }
+      }
+
+
+      // display: flex;
+
+
+
+      span {
+        line-height: 10px;
+        display: flex;
+        align-content: center;
+
+        // &.day-sub-section {
+        // }
+
+        &.month-sub-section {
+          font-size: 20px;
+          margin-top: 10px;
+          // display: block;
+          // margin-top: -100px;
+        }
+      }
+    }
+
+    small {
+      margin-top: 18px;
+      margin-bottom: 43px;
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px;
+    }
+
+    .learn-more-events {
+      font-family: Spartan;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 46px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #2971D2;
+      margin-top: 57px;
+      margin-bottom: 32px;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .info {
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+
+      small {
+        margin-bottom: 10px;
+      }
+
+      .sponsor-wrapper {
+        flex: 2;
+
+        // max-width: 200px;
+        img {
+          height: 100px;
+        }
+
+        & {
+          content: "";
+          display: block;
+          width: 50%;
+          height: 50%;
+          border-right: 1px solid #DEDEDE;
+        }
+      }
+
+      .support-wrapper {
+        small {
+          margin-bottom: 10px;
+        }
+
+        padding-left: 20px;
+        flex: 3;
+
+        h1 {
+          width: 100%;
+          text-transform: uppercase;
+          margin-bottom: 0;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        h2 {
+          line-height: 10px;
+        }
+      }
+
+
+
+    }
+  }
 }
 
 @media(max-width:1150px) {

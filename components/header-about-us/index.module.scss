@@ -1,0 +1,38 @@
+@import "/styles/variables";
+
+
+.header {
+  padding: 20px 83px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introText {
+  height: 181px;
+  width: 1274px;
+  color: $black;
+  display: flex;
+  margin-bottom: 50.5px;
+  @include spartan-32-regular-line59;
+}
+.content {
+  margin-bottom: 50.5px;
+  display: flex;
+  align-items: center;
+}
+.image {
+  margin-right: 70px;
+}
+.companyDetails {
+  height: 399px;
+  width: 567px;
+  color: $black;
+  display: flex;
+  align-items: center;
+  @include spartan-24-regular-line61;
+}
+.sectionTitle {
+  color: $blue-violet;
+  @include spartan-44-black-line81;
+}

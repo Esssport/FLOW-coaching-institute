@@ -11,7 +11,7 @@ const TrustedBrands = () => {
   return (
     <>
       <h1>TRUSTED BY BRANDS</h1>
-      <img src="/third-party/companies_section.svg" alt="trusted-companies" className="trusted-companies"></img>
+      <img src="/third-party/companies_section.svg" alt="trusted-companies" className={`${styles.img} trusted-companies`}></img>
     </>
   );
 };

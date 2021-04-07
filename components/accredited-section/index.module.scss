@@ -1,0 +1,27 @@
+@import "/styles/variables";
+
+.accreditedSection {
+  padding: 0 16px 4px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.accreditedSectionTitle {
+  color: $dark-orange;
+  margin-right: 24px;
+  @include roboto-slab-30-regular;
+}
+.icfHorizontalFullColorHorizontalFull {
+  margin-top: 11px;
+  margin-right: 20px;
+}
+.actpLogoColorOnTransparent1 {
+  margin-top: 11px;
+  margin-right: 21px;
+}
+.acsthLogo1 {
+  margin-top: 15px;
+  margin-right: 22px;
+}
+.icfCceLogoTransparentBg350x1911 {
+  margin-top: 15px;
+}

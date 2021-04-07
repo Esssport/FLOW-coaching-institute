@@ -17,9 +17,9 @@ const CredlyBadgeBanner = ({
     <div className={styles.credlyBadgeBanner}>
       <div className={styles.buttons}>
         {/* <LearnmoreBtn1 className={styles.learnmoreBtn1} /> */}
-        <p className={styles.contactUsBtn}>
+        {/* <p className={styles.contactUsBtn}>
           {contactUsBtn}
-        </p>
+        </p> */}
       </div>
       <div className={styles.flexWrapperOne}>
         <div className={styles.content}>

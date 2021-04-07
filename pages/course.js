@@ -10,6 +10,9 @@ import TrustedBrands from "../components/trusted-brands"
 import CourseCardSection from "../components/course-card-section"
 import ApplyNowSection from "../components/apply-now-section"
 import CredlyBadgeBanner from "../components/banner-badge"
+import SectionEvents from "../components/section-events"
+import SectionBook from "../components/section-book"
+
 
 const Course = props => {
     return (
@@ -24,6 +27,8 @@ const Course = props => {
             <TrustedBrands />
             <CourseCardSection />
             <ApplyNowSection />
+            <SectionEvents />
+            <SectionBook />
         </Layout>
     )
 }

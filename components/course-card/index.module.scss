@@ -27,6 +27,7 @@
   @include spartan-32-bold-line56;
 }
 .subtitle {
+  max-width: 90%;
   color: $medium-slate-blue;
   flex: 1;
   align-self: stretch;
