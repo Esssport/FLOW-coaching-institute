@@ -1,0 +1,39 @@
+@import "/styles/variables";
+
+.footerCta {
+  padding: 16.37px 59.94px 0 0;
+}
+.background {
+  width: 1440px;
+  height: 249.25px;
+  background-color: $midnight-blue-1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.vectaryTexture {
+  position: absolute;
+  left: 85px;
+  top: 0;
+}
+.section {
+  padding: 122.04px 0 37.82px 282px;
+  position: relative;
+}
+.contentView {
+  padding: 12.88px 178.03px 12.89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  height: 130px;
+  width: 416px;
+  color: $white;
+  display: flex;
+  letter-spacing: -0.51px;
+  @include spartan-24-bold-line45;
+}
+.secondaryButton {
+  width: 244px;
+}
