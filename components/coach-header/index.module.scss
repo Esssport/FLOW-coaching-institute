@@ -1,0 +1,67 @@
+@import "/styles/variables";
+
+.header {
+  padding: 0 75px 0 100px;
+  display: flex;
+  align-items: center;
+}
+.textView {
+  margin-right: 33.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  color: $black;
+  align-self: stretch;
+  display: flex;
+  margin-bottom: 24px;
+  @include roboto-slab-50-bold-2;
+}
+.subtitle {
+  color: $black;
+  align-self: stretch;
+  display: flex;
+  margin-bottom: 24px;
+  @include spartan-14-bold-line34;
+}
+.textArea {
+  max-width: 822px;
+  color: $black;
+  @include spartan-14-regular-line34;
+}
+.imageView {
+  padding: 0 0.36px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.label {
+  width: 242px;
+  color: $black-9;
+  text-align: center;
+  margin-bottom: 7px;
+  margin-left: 108.5px;
+  @include spartan-10-semi-bold;
+}
+.images {
+  margin-bottom: 11px;
+}
+.flexWrapperOne {
+  padding: 0 0 0 0.5px;
+  display: flex;
+  align-items: flex-start;
+}
+.labelTwo {
+  width: 201px;
+  color: $black-9;
+  text-align: center;
+  margin-right: 14px;
+  @include spartan-10-semi-bold;
+}
+.labelThree {
+  width: 194px;
+  color: $black-9;
+  text-align: center;
+  @include spartan-10-semi-bold;
+}

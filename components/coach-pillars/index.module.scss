@@ -1,0 +1,46 @@
+@import "/styles/variables";
+
+.num3PillarsSection {
+  padding: 65px 317.25px 35px 117.75px;
+  display: flex;
+  align-items: flex-start;
+  background-image: url("https://static.overlay-tech.com/assets/9e029968-9a17-4f63-9007-c71e3e23e292.png");
+  background-size: 100% 100%;
+}
+
+.textView {
+  padding: 26px 92.75px 39px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  max-width: 882px;
+  color: $white;
+  margin-bottom: 68px;
+  margin-left: 30.25px;
+  @include spartan-45-bold;
+}
+
+.item {
+  &:not(:last-of-type) {
+    margin-bottom: 49px;
+  }
+}
+
+.item2 {
+  padding: 0 81px 0 30px;
+  display: flex;
+  align-items: center;
+}
+.bulletPoint {
+  margin-right: 19px;
+}
+.label {
+  height: 88px;
+  width: 508px;
+  color: $white;
+  display: flex;
+  @include spartan-32-bold-line77;
+}

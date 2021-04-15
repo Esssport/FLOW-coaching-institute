@@ -17,7 +17,9 @@ export default function Layout({ children }: props) {
             <div className={styles.container}>
                 <main className={styles.main}>
                     <Navbar />
-                    {children}
+                    <div className={styles.children}>
+                        {children}
+                    </div>
                 </main>
                 <footer>
                     <Footer />
