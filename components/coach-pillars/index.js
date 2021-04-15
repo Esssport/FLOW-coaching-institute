@@ -20,7 +20,16 @@ const PillarsSection = (
     title = "Master the 3 pillars of Positive Psychology that over 50.000+ FLOW coaches use today",
   }
 ) => {
-  return (<div className={styles.num3PillarsSection}><div className={styles.textView}><p className={styles.title}>{title}</p><Item className={styles.item} /><Item className={styles.item} /><Item className={styles.item} /></div></div>);
+  return (
+    <div className={styles.num3PillarsSection}>
+      <div className={styles.textView}>
+        <p className={styles.title}>{title}</p>
+        <Item text="Contentment with the past" className={styles.item} />
+        <Item className={styles.item} />
+        <Item text="Optimism for the future" className={styles.item} />
+      </div>
+    </div>
+  );
 };
 
 export default PillarsSection;
