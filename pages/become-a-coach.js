@@ -24,4 +24,4 @@ const BecomeACoach = props => {
     )
 }
 
-module.exports = BecomeACoach;
+export default BecomeACoach;
