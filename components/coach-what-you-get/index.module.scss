@@ -1,0 +1,94 @@
+@import "/styles/variables";
+
+.whatYouWillGet {
+  background-color: #252525;
+  padding: 0 45.25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 1276px;
+  color: $white;
+  text-align: center;
+  margin-bottom: 44px;
+  @include roboto-slab-65-bold;
+}
+
+.cards {
+  margin-bottom: 44px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.servicesCardItem {
+  display: none;
+
+  &:not(:last-of-type) {
+    margin-right: 52.5px;
+  }
+}
+
+.description {
+  text-align: center;
+  height: 139px;
+  width: 1251px;
+  display: flex;
+  justify-content: center;
+  color: $white;
+  @include spartan-24-regular-line44;
+
+  & .descriptionEmphasis0 {
+    font-family: "Spartan";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44px;
+    color: $white;
+  }
+}
+
+
+
+
+.contentView {
+  min-height: 430px;
+  background-color: $ghost-white-2;
+  border-radius: 10px;
+  padding: 0 23px;
+  margin-right: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconlyBoldTimeCircle {
+  padding: 10.92px 10.91px 10.91px 10.92px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  width: 131px;
+  height: 150px;
+}
+
+.growYourTraffic {
+  max-width: 176px;
+  color: $dark-slate-gray-3;
+  text-align: center;
+  margin-bottom: 17px;
+  @include spartan-22-bold-line29;
+}
+
+.text {
+  height: 115px;
+  width: 252px;
+  color: $dark-slate-gray-3;
+  display: flex;
+  justify-content: center;
+  @include spartan-12-regular-line22;
+}

@@ -12,9 +12,9 @@ export default function Navbar() {
                     <Link href="/course">
                         <a>Online Certifications <img src="/arrow-down.svg" className='arrow-down' alt="arrow-down"/></a>
                     </Link>
-                    <Link href="/">
+                    {/* <Link href="/">
                         <a>Corporate</a>
-                    </Link>
+                    </Link> */}
                     <Link href="/about-us">
                         <a>About Us</a>
                     </Link>

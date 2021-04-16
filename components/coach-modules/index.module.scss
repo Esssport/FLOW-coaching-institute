@@ -1,0 +1,106 @@
+@import "/styles/variables";
+
+.container {
+  padding-top: 30px;
+  background-color: #252525;
+}
+
+.header {
+  padding: 0 25.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title2 {
+  width: 324px;
+  text-align: center;
+  color: $white;
+  @include spartan-24-extra-bold-line42;
+  
+}
+.titleEmphasis1 {
+  font-family: "Spartan";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 42px;
+  color: $orange-red;
+}
+
+.modules {
+  padding: 24.5px 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame987 {
+  display: flex;
+  align-items: flex-start;
+
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+
+.item {
+  &:not(:last-of-type) {
+    margin-right: 31px;
+  }
+}
+
+.itemTwo {
+  height: 437px;
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}
+
+.itemThree {
+  min-height: 670px;
+  background-color: $white;
+  border-radius: 8px;
+  padding: 40px 32px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subtitle {
+  width: 286px;
+  color: $dark-gray-6;
+  margin-bottom: 12px;
+  @include spartan-18-regular-line32;
+}
+.title {
+  width: 286px;
+  color: $text-gray-900;
+  margin-bottom: 12px;
+  @include spartan-24-semi-bold-line32;
+}
+.description {
+  width: 286px;
+  color: $text-gray-900;
+  @include spartan-16-regular-line26;
+  & .descriptionEmphasis1 {
+    font-family: "Spartan";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $text-gray-900;
+  }
+  & .descriptionEmphasis2 {
+    margin-top: 26px;
+    font-family: "Spartan";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $blue-violet;
+  }
+}
