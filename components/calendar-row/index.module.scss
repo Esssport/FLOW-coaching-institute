@@ -1,0 +1,105 @@
+@import "/styles/variables";
+
+.tableRowClose {
+  background-color: $white;
+  border-radius: 5px;
+  padding: 23px 14px 29px 40px;
+  display: flex;
+  align-items: flex-start;
+}
+.contentView {
+  display: flex;
+  align-items: center;
+}
+.courseTitle {
+  height: 100px;
+  width: 291px;
+  color: $black;
+  display: flex;
+  align-items: center;
+  margin-right: 33.5px;
+  @include spartan-14-bold-line25;
+}
+.trainingDays {
+  height: 100px;
+  width: 83px;
+  color: $black;
+  display: flex;
+  align-items: center;
+  margin-right: 33.5px;
+  @include spartan-12-regular-line22;
+}
+.dates {
+  height: 100px;
+  width: 141px;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 33.5px;
+  @include spartan-12-regular-line22;
+}
+.seatCount {
+  height: 100px;
+  width: 90px;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 33.5px;
+  @include spartan-18-bold-line33;
+}
+.price {
+  height: 100px;
+  width: 141px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 33.5px;
+  color: $red-1;
+  @include spartan-14-bold-line25;
+  & .priceEmphasis0 {
+    font-family: "Spartan";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    color: $red-1;
+  }
+  & .priceEmphasis1 {
+    font-family: "Spartan";
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 14px;
+    color: $red-1;
+  }
+  & .priceEmphasis3 {
+    font-family: "Spartan";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    color: $silver;
+  }
+  & .priceEmphasis4 {
+    font-family: "Spartan";
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 14px;
+    color: $silver;
+  }
+  & .priceEmphasis5 {
+    font-family: "Spartan";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    color: $black;
+  }
+}
+.transparentButton {
+  margin-right: 33.5px;
+  width: 44px;
+  height: 15px;
+}
+.primaryButton {
+  width: 91px;
+  height: 17px;
+}

@@ -1,4 +1,11 @@
 .buttons {
-    display: inline-block;
-    min-width: 50%;
+    display: flex;
+    min-width: 20%;
+}
+
+.reverse {
+    
+    display: flex;
+    min-width: 20%;
+    flex-direction: row-reverse;
 }
