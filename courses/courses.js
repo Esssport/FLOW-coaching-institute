@@ -6,18 +6,23 @@ const courses = [
         price: "4,990",
         seatCount: "3",
         days: "Wednesdays",
-        partOne: `Modules 1-6.
+        modules: "1-5",
+        startDate: "01-04-2021",
+        lede: `Modules 1-6.
                 Live webinars, peer coaching practice +
                 ICF CKA oral assessment performance
                 evaluation + ACTP mentoring &
                 supervision sessions.`,
-        partTwo: `Core Foundations (Module 1-5) OR
+        description: `Core Foundations (Module 1-5) OR
         Business Coaching Certification (Module 1-5) +
         Module 6. For program hours, please refer to
         current Modules 1-5 & Module 6 calendar
         below. Individual ACTP mentoring sessions
         & ICF CKA oral assessment are self
-        paced.`
+        paced.`,
+        liveGroupClasses: ["Components-driven design system",
+            "Variety of eye-catching landing templates",
+        ],
     },
     {
         id: 2,

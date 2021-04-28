@@ -1,17 +1,23 @@
 import styles from "./index.module.scss";
 import React, { useState } from "react";
-import CalendarRow from "../calendar-row";
 import courses from "../../courses/courses"
 import CalendarRowContainer from "../calendar-row-container";
+import ItemAddedPopup from "../item-added-popup";
 
 
 const CalendarList = ({ primaryOnClick }) => {
+  const [showModal, setShowModal] = useState(true)
+  const [course, setCourse] = useState({})
 
+  const handleCourse = (props) => {
+    console.log("course Handled", props)
+  }
   return (
     <div className={styles.container}>
-      {courses.map(row => {
+      {showModal ? <ItemAddedPopup /> : ""}
+      {courses.map(course => {
         return (
-          <CalendarRowContainer key={row.id} {...row}/>
+          <CalendarRowContainer primaryOnClick={handleCourse} key={course.id} {...course}/>
         )
       })}
     </div>

@@ -6,10 +6,9 @@ import CalendarDetails from "../calendar-details";
 
 const CalendarRowContainer = (props) => {
   const [isHidden, setIsHidden] = useState(true)
-  const { primaryOnClick, secondaryOnClick } = props
+  const { primaryOnClick } = props
   
-  const updateState = () => {
-    console.log("isHidden", isHidden)
+  const toggleDetails = () => {
     return setIsHidden(isHidden ? false : true)
   }
   return (
@@ -17,11 +16,11 @@ const CalendarRowContainer = (props) => {
       <CalendarRow
       {...props}
         primaryOnClick={primaryOnClick}
-        secondaryOnClick={updateState}
+        secondaryOnClick={toggleDetails}
       />
       <CalendarDetails
         {...props}
-        closeOnClick={updateState}
+        closeOnClick={toggleDetails}
         isHidden={isHidden}
       />
     </ul>
