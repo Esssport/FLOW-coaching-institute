@@ -7,6 +7,7 @@ const CheckoutItem = ({
   price = "699 CAD$",
   courseTitle = "Advanced Coaching Certification Program (ACTP)"
 }) => {
+  
   return (
     <div className={styles.cartItemAdded}>
       <div className={styles.courseInfo}>
