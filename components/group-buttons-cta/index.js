@@ -1,12 +1,11 @@
 import ButtonCTA from "../button-cta"
-import ButtonTransparent from "../button-transparent"
 import styles from "./index.module.scss"
 
-const GroupButtonsCTA = props => {
+const GroupButtonsCTA = ({secondaryOnClick, primaryOnClick, primaryCTA, secondaryCTA, reverse=false}) => {
     return (
-        <div className={styles.buttons}>
-            <ButtonCTA />
-            <ButtonTransparent />
+        <div className={`${reverse ? styles.reverse : styles.buttons}`}>
+            <ButtonCTA onClick={primaryOnClick} cta={primaryCTA} />
+            <ButtonCTA onClick={secondaryOnClick} cta={secondaryCTA} isSecondary={true} />
         </div>
     )
 }

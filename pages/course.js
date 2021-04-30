@@ -33,4 +33,4 @@ const Course = props => {
     )
 }
 
-module.exports = Course;
+export default Course;

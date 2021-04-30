@@ -1,0 +1,80 @@
+@import "/styles/variables";
+
+.secondaryButton {
+  background-color: $dark-orange;
+  border-radius: 10px;
+  // padding: 18px 41px;
+  display: flex;
+  align-items: center;
+  height: 85px;
+  width: 172px;
+}
+
+.btnLabel {
+  color: $white;
+  flex: 1;
+  text-align: center;
+  letter-spacing: -0.9px;
+  @include spartan-30-bold;
+}
+
+.background {
+  width: 1440px;
+  height: 247px;
+  background-color: $midnight-blue-1;
+  position: absolute;
+  left: 0;
+  // bottom: 235px;
+  margin-top: 94px;
+}
+
+.section {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  // top: -223px;
+}
+
+.postboxImage {
+  margin-right: 57.94px;
+}
+
+.contentView {
+  margin-top: 132.08px;
+  padding: 8.84px 34.53px 8.85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  height: 130px;
+  width: 416px;
+  color: $white;
+  display: flex;
+  letter-spacing: -0.51px;
+  @include spartan-32-bold-line42;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.emailAddressField {
+  background-color: $white;
+  margin-right: 30px;
+  border-radius: 10px;
+  padding: 16px 136.68px 15px 27.82px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.placeholder {
+  height: 21.99px;
+  width: 164.5px;
+  color: $dim-gray;
+  display: flex;
+  letter-spacing: -0.26px;
+  @include spartan-16-medium-2;
+}

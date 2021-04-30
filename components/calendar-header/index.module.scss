@@ -1,0 +1,103 @@
+@import "/styles/variables";
+
+.calendarHeaderWeb {
+  background-color: $royal-blue-2;
+  padding: 63px 122px 62.42px;
+  display: flex;
+  align-items: center;
+}
+.contentView {
+  display: flex;
+  align-items: center;
+}
+.segmentedControlSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 721px;
+  height: 121px;
+}
+.title {
+  color: $white;
+  align-self: stretch;
+  margin-bottom: 19.5px;
+  @include spartan-24-bold-line36;
+}
+.segmentedControl {
+  background-color: $snow;
+  border-radius: 24px;
+  padding: 3.93px 50.22px 3.93px 4.24px;
+  display: flex;
+  align-items: center;
+}
+.toggle {
+  background-color: $dark-slate-gray;
+  margin-right: 38.96px;
+  border-radius: 20px;
+  padding: 11.98px 10.72px 10.28px 7.64px;
+  display: flex;
+  align-items: center;
+}
+.label {
+  height: 24.23px;
+  width: 265.67px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include spartan-16-bold-line36;
+}
+.labelTwo {
+  height: 24.23px;
+  width: 173.87px;
+  color: $royal-blue-2;
+  display: flex;
+  align-items: center;
+  margin-right: 75.6px;
+  @include spartan-12-bold-line36;
+}
+.labelThree {
+  height: 24.23px;
+  width: 55.08px;
+  color: $royal-blue-2;
+  display: flex;
+  align-items: center;
+  @include spartan-12-bold-line36;
+}
+.timezoneSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.infoLabel {
+  margin-bottom: 20.08px;
+  display: flex;
+  align-items: center;
+}
+.iconlyBoldLocation {
+  margin-right: 12px;
+}
+.labelFour {
+  max-width: 410px;
+  color: $white;
+  @include spartan-18-regular;
+}
+.selector {
+  margin-left: 67px;
+  padding: 0 60px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.timeZoneOptionOne {
+  color: $white;
+  margin-bottom: 19.5px;
+  @include spartan-18-bold-2;
+}
+.timeZoneOptionTwo {
+  color: $transparent-silver;
+  @include spartan-18-bold-2;
+  &:not(:last-of-type) {
+    margin-bottom: 19.5px;
+  }
+}

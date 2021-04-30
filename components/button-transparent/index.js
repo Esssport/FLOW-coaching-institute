@@ -1,11 +1,11 @@
 import styles from "./index.module.scss";
 
 
-const ButtonTransparent = ({ btnLabel = "Contact" }) => {
+const ButtonTransparent = ({ onClick, btnLabel = "Contact" }) => {
   return (
-    <div className={styles.transparentButton}>
+    <button onClick={onClick} className={styles.transparentButton}>
       <p className={styles.btnLabel}>{btnLabel}</p>
-    </div>
+    </button>
   );
 };
 

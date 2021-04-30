@@ -1,0 +1,76 @@
+@import "/styles/variables";
+
+.transparentButton {
+  border-radius: 10px;
+  padding: 10px 39px;
+  display: flex;
+  align-items: center;
+  border: 2px solid $dark-orange;
+}
+.transparentBtnLabel {
+  color: $dark-orange;
+  flex: 1;
+  text-align: center;
+  letter-spacing: -0.48px;
+  @include spartan-16-bold-line19;
+}
+
+.basketDetailsSection {
+  padding: 37px 0 10px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.flexWrapperOne {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+.basketLabel {
+  color: $black;
+  margin-top: 1px;
+  margin-right: 13px;
+  @include roboto-slab-32-bold;
+}
+.itemCountLabel {
+  color: $dark-gray-4;
+  margin-top: 6px;
+  margin-right: 301px;
+  @include roboto-slab-24-light;
+}
+.primaryButton {
+  &:not(:last-of-type) {
+    margin-right: 29px;
+  }
+}
+.transparentButton {
+  margin-right: 29px;
+}
+
+.primaryButton {
+  background-color: $dark-slate-gray;
+  border-radius: 10px;
+  padding: 2.5px 41px;
+  display: flex;
+  align-items: center;
+}
+.primaryBtnLabel {
+  color: $white;
+  flex: 1;
+  text-align: center;
+  @include spartan-16-bold-line39;
+}
+
+.transparentButtonTwo {
+  border-radius: 10px;
+  padding: 0.5px 39px;
+  display: flex;
+  align-items: center;
+  border: 2px solid $dim-gray-2;
+}
+.transparentBtnLabelTwo {
+  color: $dim-gray-2;
+  flex: 1;
+  text-align: center;
+  @include spartan-16-bold-line39;
+}

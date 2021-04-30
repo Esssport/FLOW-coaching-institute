@@ -1,0 +1,46 @@
+@import "/styles/variables";
+
+.primaryDiv {
+  min-width: 200px;
+  margin-right: 5%;
+  background-color: $blue-violet;
+  border-radius: 10px;
+  padding: 5px;
+  display: inline-block;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primaryLabel {
+  color: $white;
+  flex: 1;
+  text-align: center;
+  letter-spacing: -0.45px;
+  @include spartan-15-bold;
+}
+
+
+.secondaryDiv {
+  margin-right: 5%;
+  min-width: 200px;
+  border-radius: 10px;
+  // padding: 13px 36px;
+  display: inline-block;
+  align-items: center;
+  border: 5px solid #b6b6b6;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.secondaryLabel {
+  color: $black;
+  flex: 1;
+  text-align: center;
+  letter-spacing: -0.45px;
+  @include spartan-15-bold;
+}

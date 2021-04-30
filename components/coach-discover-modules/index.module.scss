@@ -1,0 +1,21 @@
+@import "/styles/variables";
+.discoverSection {
+  background-color: #252525;
+  padding: 0 111px 0 100px;
+  display: flex;
+  align-items: center;
+}
+.title {
+  height: 130px;
+  width: 809px;
+  color: $white;
+  display: flex;
+  margin-right: 29px;
+  letter-spacing: -0.51px;
+  @include spartan-44-bold-line62;
+}
+.icfLogo {
+  &:not(:last-of-type) {
+    margin-right: 29px;
+  }
+}

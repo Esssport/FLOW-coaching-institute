@@ -1,0 +1,84 @@
+@import "/styles/variables";
+
+.contentView {
+  background-color: $blue-violet;
+  padding: 0 120px 0 165.34px;
+  display: flex;
+  align-items: flex-start;
+}
+.basketIcon {
+  margin-right: 93.41px;
+}
+.flexWrapperOne {
+  padding: 54.5px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.priceSection {
+  margin-bottom: 8.5px;
+  margin-left: 1.25px;
+  border-radius: 10px;
+  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  border: 2px solid $light-grey;
+}
+.innerSection {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.totalLabel {
+  margin-right: 114px;
+  display: flex;
+  align-items: flex-start;
+  width: 394px;
+}
+.label {
+  color: $white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  letter-spacing: -0.72px;
+  @include spartan-24-regular-line29;
+}
+.price {
+  color: $white;
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.84px;
+  @include spartan-28-bold-line34;
+}
+.infoBanner {
+  display: flex;
+  align-items: center;
+}
+.iconlyLightInfoCircle {
+  margin-right: 10px;
+}
+.labelTwo {
+  width: 772px;
+  color: $white;
+  @include spartan-22-regular;
+}
+
+.primaryButton {
+  // width: 180px;
+  background-color: $white;
+  height: 70px;
+  border-radius: 10px;
+  padding: 18px 41px;
+  display: flex;
+  align-items: center;
+}
+
+.btnLabel {
+  color: $blue-violet;
+  letter-spacing: -0.9px;
+  @include spartan-30-bold;
+}

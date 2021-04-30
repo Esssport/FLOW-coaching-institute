@@ -1,0 +1,50 @@
+@import "/styles/variables";
+.tableViewHeader {
+  background-color: $white-smoke;
+  border-radius: 10px;
+  padding: 0 0 0 19px;
+  display: flex;
+  align-items: flex-start;
+}
+.frame713 {
+  padding: 18.5px 421px 18.5px 0;
+  display: flex;
+  align-items: center;
+}
+.classDetailsTitle {
+  color: $black;
+  margin-right: 213px;
+  @include spartan-20-bold-line36;
+}
+.frame886 {
+  display: flex;
+  align-items: center;
+  &:not(:last-of-type) {
+    margin-right: 53px;
+  }
+}
+.daysTitle {
+  color: $black;
+  @include spartan-20-bold-line36;
+}
+.frame887 {
+  margin-right: 55px;
+  display: flex;
+  align-items: center;
+}
+.frame888 {
+  margin-right: 43px;
+  display: flex;
+  align-items: center;
+}
+.seatsTitle {
+  color: $black;
+  text-align: center;
+  @include spartan-18-bold-line33;
+}
+.costTitle {
+  color: $black;
+  text-align: center;
+  margin-right: 15px;
+  @include spartan-20-bold-line36;
+}

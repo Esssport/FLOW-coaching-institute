@@ -1,14 +1,11 @@
 import styles from "./index.module.scss";
+import Button from "../button"
 
 
-const buttonCTA = ({ cta = "Apply now" }) => {
+const ButtonCTA = ({ cta = "Apply now", isSecondary=false, onClick }) => {
   return (
-    <div className={styles.getInTouchBtn}>
-      <p className={styles.getintouchBtn}>
-        {cta}
-      </p>
-    </div>
+    <Button onClick={onClick} cta={cta} isSecondary={isSecondary}/>
   );
 };
 
-export default buttonCTA;
+export default ButtonCTA;

@@ -6,15 +6,15 @@ export default function Navbar() {
             <nav>
                 <Link href="/"><img src="/logo.svg" className="logo" alt="Flow Coaching Institute Logo"/></Link>
                 <div className="menuLinks">
-                    <Link href="/">
+                    <Link href="/become-a-coach">
                         <a>Become a Coach Now</a>
                     </Link>
                     <Link href="/course">
                         <a>Online Certifications <img src="/arrow-down.svg" className='arrow-down' alt="arrow-down"/></a>
                     </Link>
-                    <Link href="/">
+                    {/* <Link href="/">
                         <a>Corporate</a>
-                    </Link>
+                    </Link> */}
                     <Link href="/about-us">
                         <a>About Us</a>
                     </Link>

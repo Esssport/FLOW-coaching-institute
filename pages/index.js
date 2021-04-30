@@ -1,6 +1,3 @@
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
-import Navbar from '../components/nav-bar'
 import Slider from 'react-slick'
 import CustomSlider from '../components/custom-slider'
 import CtaBanner from '../components/cta-banner'
@@ -82,7 +79,7 @@ export default function Home() {
             </CustomSlider>
             <TrustedBrands />
             <SectionEvents />
-            
+
             {/* <SectionBook /> */}
             <div className="book-section">
               <img src='/book.svg' alt='book'></img>
@@ -92,7 +89,7 @@ export default function Home() {
                 <div className="discount-section">
                   <img src="/icon-discount.svg"></img>
                   <div className="discount-description">
-                    <h2>Free for course participants</h2>
+                    <h2 >Free for course participants</h2>
                     <p>The course participants have FREE access to the e-book worth <strong>54.99 CAD$</strong></p>
                   </div>
                 </div>
@@ -109,7 +106,7 @@ export default function Home() {
               <h2>Follow us on Instagram <img src="/icon-instagram.svg"></img></h2>
             </div>
 
-          <Outro />
+            <Outro />
 
           </div>
         </div>
@@ -122,9 +119,6 @@ export default function Home() {
           </div> */}
         {/* <h1 className={styles.title}>
           this is {' '}
-          <Link href="/blog/first-post">
-            <a>The blog page </a>
-          </Link>
         </h1>
 
         <p className={styles.description}>

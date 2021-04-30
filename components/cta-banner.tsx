@@ -4,10 +4,7 @@ interface ctaProps {
 }
 
 const removeElement = (el: any) => {
-    // d = document.getElementById('overlay');
-    // d.parentNode.removeChild(d);
     document.querySelector('.cta-banner-container')?.remove()
-    // el.remove()
 }
 
 export default function CtaBanner({ copy, ctaText }: ctaProps) {

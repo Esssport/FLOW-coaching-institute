@@ -19,4 +19,4 @@ const AboutUs = props => {
     )
 }
 
-module.exports = AboutUs;
+export default AboutUs;

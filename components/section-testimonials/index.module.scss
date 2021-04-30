@@ -1,5 +1,8 @@
 @import "/styles/variables";
 
+.darkBg {
+  background-color: #252525;
+}
 
 .headline {
   padding: 0 1%;
@@ -8,7 +11,7 @@
   text-align: center;
   margin-top: 30px;
   margin-bottom: 0;
-  margin-top: 40px;
+  margin-top: 0 !important;
   font-weight: bold;
 
   background: linear-gradient(90deg, #FEC07B 26.7%, #4B45B8 71.16%);

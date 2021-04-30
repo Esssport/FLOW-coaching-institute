@@ -1,0 +1,77 @@
+@import "/styles/variables";
+
+.cartItemAdded {
+  padding: 0 98px 0 0;
+  display: flex;
+  align-items: center;
+}
+.courseInfo {
+  margin-right: 56.5px;
+  display: flex;
+  align-items: flex-start;
+}
+.courseImage {
+  margin-right: 27px;
+  border-radius: 10px;
+}
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  color: $black;
+  align-self: stretch;
+  display: flex;
+  margin-bottom: 17px;
+  @include spartan-32-bold-1;
+}
+.description {
+  color: $black;
+  align-self: stretch;
+  display: flex;
+  @include spartan-22-regular-line38;
+}
+.columnTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  &:not(:last-of-type) {
+    margin-right: 56.5px;
+  }
+}
+.oldPrice {
+  height: 68px;
+  width: 237px;
+  color: $red-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: line-through;
+  @include spartan-30-bold-1;
+}
+.newPrice {
+  height: 68px;
+  width: 237px;
+  color: $black;
+  display: flex;
+  align-items: center;
+  @include spartan-40-bold-2;
+}
+.addIcon {
+  &:not(:last-of-type) {
+    margin-bottom: 20.5px;
+  }
+}
+.itemCountLabel {
+  height: 60px;
+  width: 60px;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20.5px;
+  @include spartan-24-bold-line33;
+}

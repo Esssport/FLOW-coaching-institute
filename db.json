@@ -1,0 +1,34 @@
+{
+  "cart": [
+    {
+      "id": 1,
+      "courseTitle": "ICF ACTP All Inclusive Advanced Coaching Certification – Module 1-6 ACC/PCC/MCC",
+      "dates": "January 27, 2021 – May 5, 2021",
+      "price": "4,990",
+      "seatCount": "3",
+      "days": "Wednesdays",
+      "partOne": "Modules 1-6.\n                Live webinars, peer coaching practice +\n                ICF CKA oral assessment performance\n                evaluation + ACTP mentoring &\n                supervision sessions.",
+      "partTwo": "Core Foundations (Module 1-5) OR\n        Business Coaching Certification (Module 1-5) +\n        Module 6. For program hours, please refer to\n        current Modules 1-5 & Module 6 calendar\n        below. Individual ACTP mentoring sessions\n        & ICF CKA oral assessment are self\n        paced."
+    },
+    {
+      "id": 4,
+      "courseTitle": "Fourth course Module 10-16 ACC/PCC/MCC",
+      "dates": " May 5, 2021",
+      "price": "19,200",
+      "seatCount": "150",
+      "days": "Sundays",
+      "partOne": "Modules 9-21.\n                Live webinars, peer coaching practice +\n                ICF CKA oral assessment performance\n                evaluation + ACTP mentoring &\n                supervision sessions.",
+      "partTwo": "Core Foundations (Module 1-5) OR\n                Business Coaching Certification (Module 1-5) +\n                Module 6. For program hours, please refer to\n                current Modules 1-5 & Module 6 calendar\n                below. Individual ACTP mentoring sessions\n                & ICF CKA oral assessment are self\n                paced."
+    },
+    {
+      "id": 2,
+      "courseTitle": "second course Module 1-6 ACC/PCC/MCC",
+      "dates": "January 27, 2021 – May 5, 2021",
+      "price": "1,200",
+      "seatCount": "300",
+      "days": "Wednesdays",
+      "partOne": "Modules 6-9.\n                Live webinars, peer coaching practice +\n                ICF CKA oral assessment performance\n                evaluation + ACTP mentoring &\n                supervision sessions.",
+      "partTwo": "Core Foundations (Module 1-5) OR\n                Business Coaching Certification (Module 1-5) +\n                Module 6. For program hours, please refer to\n                current Modules 1-5 & Module 6 calendar\n                below. Individual ACTP mentoring sessions\n                & ICF CKA oral assessment are self\n                paced."
+    }
+  ]
+}
