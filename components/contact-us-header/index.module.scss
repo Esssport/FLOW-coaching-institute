@@ -1,0 +1,24 @@
+@import "/styles/variables";
+
+.courseOverviewSection {
+  padding: 20px 132px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.courseOverviewTitle {
+  color: $black;
+  margin-bottom: 30px;
+  @include roboto-slab-60-bold;
+}
+.accreditedSection {
+  margin-bottom: 30px;
+  width: 736px;
+}
+.courseOverviewDescription {
+  height: 364px;
+  width: 1208px;
+  color: $black;
+  display: flex;
+  @include spartan-24-regular-line70;
+}

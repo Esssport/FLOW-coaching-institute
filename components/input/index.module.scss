@@ -1,0 +1,25 @@
+@import "/styles/variables";
+.input {
+    padding: 0 0 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.email {
+    color: $grey-aa;
+    margin-bottom: 15px;
+    @include spartan-18-bold-2;
+}
+
+.formField {
+    width: 300px;
+    height: 60px;
+    background-color: $white;
+    border-radius: 10px;
+}

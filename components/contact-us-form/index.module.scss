@@ -1,0 +1,65 @@
+@import "/styles/variables";
+.contactFormSection {
+    background-color: $white-smoke-5;
+    padding: 51px 34px 62px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    color: $black;
+    margin-bottom: 8px;
+    @include spartan-32-black;
+}
+
+.description {
+    max-width: 604px;
+    color: $black;
+    margin-bottom: 30px;
+    margin-left: 0.25px;
+    @include spartan-24-regular-line39;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flexWrapperOne {
+    margin-bottom: 22.25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.input {
+    margin-top: 5.75px;
+    margin-right: 33px;
+}
+
+.flexWrapperTwo {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.inputTwo {
+    &:not(:last-of-type) {
+        margin-right: 33px;
+    }
+}
+
+.flexWrapperThree {
+    margin-bottom: 28px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.inputThree {
+    margin-bottom: 30px;
+}
+
+.primaryButton {
+    margin-left: 73px;
+}

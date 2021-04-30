@@ -1,0 +1,41 @@
+@import "/styles/variables";
+.input {
+    padding: 0 0 11px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label {
+    color: $grey-aa;
+    margin-bottom: 15px;
+    @include spartan-18-bold-2;
+}
+
+.formField {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 19px 15px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 18px;
+    width: 308px;
+    border: 1px solid $grey-aa-large;
+}
+
+.inputText {
+    color: rgba(202, 202, 202, 1);
+    @include spartan-16-medium-2;
+}
+
+.iconChevronDown {
+    padding: 3.79px 0.8px 3.59px 0.79px;
+    display: flex;
+    align-items: center;
+}

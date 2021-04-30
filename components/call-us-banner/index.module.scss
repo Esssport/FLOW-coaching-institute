@@ -1,0 +1,29 @@
+@import "/styles/variables";
+.callUsBanner {
+    background-color: $sandy-brown-2;
+    display: flex;
+    align-items: flex-start;
+    backdrop-filter: blur(4px);
+}
+
+.frame899 {
+    padding: 31.5px 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    height: 24px;
+    width: 301px;
+    color: $black;
+    display: flex;
+    margin-right: 18px;
+    @include spartan-20-bold-1;
+}
+
+.num18884030707OnlyForUsCanada {
+    width: 541px;
+    color: $black;
+    @include spartan-18-bold-2;
+}

@@ -1,0 +1,52 @@
+@import "/styles/variables";
+.card1 {
+    padding: 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 25%;
+    flex: wrap;
+}
+
+.flexWrapperOne {
+    margin-bottom: 16px;
+    border-radius: 10px;
+    padding: 27px 0 187px 235px;
+    position: relative;
+    background-image: url("https://static.overlay-tech.com/assets/83823cff-e004-4594-8a5d-4915fa438c75.png");
+    background-size: 100% 100%;
+}
+
+.tagBackground {
+    width: 135px;
+    height: 36px;
+    background-color: $black;
+    position: relative;
+}
+
+.tag {
+    color: $white;
+    text-align: center;
+    position: absolute;
+    right: 28px;
+    top: 34px;
+    letter-spacing: -0.54px;
+    @include spartan-18-bold-line22;
+}
+
+.title {
+    max-width: 370px;
+    color: $dark-slate-gray;
+    letter-spacing: 0.25px;
+    @include spartan-22-bold-line36;
+}
+
+.subtitle {
+    height: 71px;
+    width: 370px;
+    color: $dark-slate-gray;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+    @include spartan-18-regular-line32;
+}

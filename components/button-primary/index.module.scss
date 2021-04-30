@@ -1,0 +1,17 @@
+@import "/styles/variables";
+.primaryButton {
+    background-color: $blue-violet;
+    border-radius: 5px;
+    padding: 8.5px 36px 8.5px 41px;
+    display: flex;
+    align-items: center;
+}
+
+.btnLabel {
+    color: $white;
+    text-align: center;
+    letter-spacing: -0.72px;
+    @include spartan-24-bold-line29;
+    background-color: #5222d0;
+    border: 0;
+}

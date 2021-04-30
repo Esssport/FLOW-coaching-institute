@@ -1,0 +1,36 @@
+@import "/styles/variables";
+.header {
+    padding: 0 93px;
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textView {
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-flow: wrap;
+}
+
+.title {
+    height: 59px;
+    width: 563px;
+    color: $black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    @include roboto-slab-44-black;
+}
+
+.subtitle {
+    max-width: 563px;
+    color: $black;
+    @include spartan-20-medium-line35;
+}
+
+.segmentedControl {
+    height: 54.35px;
+}
