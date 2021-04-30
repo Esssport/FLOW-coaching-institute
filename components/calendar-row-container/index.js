@@ -1,5 +1,6 @@
 import styles from "./index.module.scss";
-import React, { useState } from "react";
+import React from "react";
+import {useState, useEffect} from 'react';
 import CalendarRow from "../calendar-row";
 import CalendarDetails from "../calendar-details";
 
