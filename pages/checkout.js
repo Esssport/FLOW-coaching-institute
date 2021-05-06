@@ -3,29 +3,45 @@ import CheckoutHeader from "../components/checkout-header"
 import Layout from "../components/layout"
 import Cookies from "js-cookie"
 import React from 'react'
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import CheckoutList from "../components/checkout-list"
-import FooterCTA from "../components/footer-cta"
+import courses from "../courses/courses"
+import PaymentSection from "../components/checkout-payment-section"
 
 
 
 
 const Checkout = props => {
-    const cookieCart = Cookies.getJSON("cart")
-    const [cart, setCart] = useState(cookieCart)
-    // const uniqueSet = new Set(cart)
-    // const uniqueCart = [...uniqueSet]
-    
-    
+    const [cookieCart, setCookieCart] = useState(Cookies.getJSON("cart"))
+    const [cart, setCart] = useState([])
+    const [totalPrice, setTotalPrice] = useState(0)
+    const [showPayment, setShowPayment] = useState(false)
+
     useEffect(() => {
-        setCart(Cookies.getJSON("cart"))
-        console.log("COOKIES", cookieCart)
+        const selectedCourses = courses.filter((course) => cookieCart?.includes(course.id))
+        setCart(selectedCourses)
+        let total = 0
+        if (!cart) return
+        for (let i = 0; i < selectedCourses.length; i++) {
+            total += Number(selectedCourses[i].price) || 0
+        }
+        setTotalPrice(total)
     }, [])
-    console.log("cart", cart)
+
+    const toggleShowPayment = () => {
+        setShowPayment(!showPayment)
+    }
+
+    const resetCart = () => {
+        setCart([])
+        setTotalPrice(0)
+    }
+
     return (
         <Layout>
-            <CheckoutHeader cart={cart} />
-            <CheckoutList cart={cart} />
+            <CheckoutHeader toggleShowPayment={toggleShowPayment} price={totalPrice} resetCart={setCart} cart={cart} />
+            {showPayment ? <PaymentSection price={totalPrice} /> : ""}
+            <CheckoutList resetCart={resetCart} cart={cart} />
         </Layout>
     )
 }

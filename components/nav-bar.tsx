@@ -24,7 +24,7 @@ export default function Navbar() {
                     <Link href="/">
                         <a>Flowsity</a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/checkout">
                         <a><img src="/shoppingCart.svg" className='shopping-cart' alt="Shopping cart"/></a>
                     </Link>
                 </div>

@@ -3,19 +3,8 @@ import React, { useEffect, useState } from "react";
 
 
 const CheckoutHeader = (props) => {
-  const { cart} = props
-  const [price, setPrice] = useState(0)
-  
-  useEffect(() => {
-    let totalPrice = 0
-    if(!cart) return
-    for (let i = 0; i < cart.length ; i++) {
-      totalPrice += Number(cart[i].price) || 0
-    }
-    setPrice(totalPrice)
-  }, [])
-  console.log("PRICE", price);
-  // const price = 
+  const {price, toggleShowPayment} = props
+
   return (
     <div className={styles.contentView}>
       <img
@@ -30,7 +19,7 @@ const CheckoutHeader = (props) => {
               <p className={styles.label}>Total amount:</p>
               <p className={styles.price}>{price}  CAD$</p>
             </div>
-            <button className={styles.primaryButton}>
+            <button onClick={toggleShowPayment} className={styles.primaryButton}>
               <p className={styles.btnLabel}>Next step</p>
             </button>
           </div>

@@ -1,12 +1,14 @@
 import styles from "./index.module.scss";
 import React from "react";
 
-const CheckoutItem = ({
-  courseImage = "https://static.overlay-tech.com/assets/55bba1ec-78ae-48fe-b45b-2b183fff6766.png",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, praesent enim et quam. Volutpat a laoreet purus maecenas pellentesque vitae et pretium sit.",
-  price = "699 CAD$",
-  courseTitle = "Advanced Coaching Certification Program (ACTP)"
-}) => {
+const CheckoutItem = (props) => {
+  console.log("PROPS", props)
+  const {
+    courseImage = "https://static.overlay-tech.com/assets/55bba1ec-78ae-48fe-b45b-2b183fff6766.png",
+    courseOverivew = "",
+    price = "N/A",
+    courseTitle = ""
+  } = props
   
   return (
     <div className={styles.cartItemAdded}>
@@ -19,7 +21,7 @@ const CheckoutItem = ({
         <div className={styles.infoSection}>
           <p className={styles.title}>{courseTitle}</p>
           <p className={styles.description}>
-            {description}
+            {courseOverivew}
           </p>
         </div>
       </div>

@@ -33,7 +33,7 @@ const SecondTransparentButton = () => {
 };
 
 const CalendarDetails = (props) => {
-    const {isHidden, closeOnClick, partOne, partTwo} = props
+    const {isHidden, closeOnClick, courseOverivew, completionHoursText} = props
     return (
         <div className={isHidden ? styles.hidden : styles.tableRowDetails}>
             <div className={styles.relativeWrapperOne}>
@@ -47,10 +47,10 @@ const CalendarDetails = (props) => {
                     <div className={styles.columnOne}>
                         <div className={styles.textSection}>
                             <p className={styles.partOne}>
-                                {partOne}
+                                {courseOverivew}
                             </p>
                             <p className={styles.partTwo}>
-                                {partTwo}
+                                {completionHoursText}
                             </p>
                         </div>
                     </div>

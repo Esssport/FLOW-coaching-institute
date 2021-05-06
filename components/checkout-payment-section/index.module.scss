@@ -1,0 +1,151 @@
+@import "/styles/variables";
+
+.paymentMethods {
+  padding: 23.5px 24.5px 13.5px 124.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.topSection {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 523px;
+  width: 1291px;
+}
+.contentView {
+  margin-right: 105.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header {
+  margin-bottom: 33.5px;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.title {
+  color: $black;
+  flex: 1;
+  margin-right: 77px;
+  @include roboto-slab-28-bold;
+}
+.input {
+  margin-bottom: 33.5px;
+  width: 520px;
+}
+.row {
+  margin-bottom: 33.5px;
+  display: flex;
+  align-items: flex-start;
+}
+.inputTwo {
+  height: 83px;
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+.installOptionLabel {
+  width: 336px;
+}
+.paymentPlans {
+  padding: 40px 0 184px 64px;
+  display: flex;
+  align-items: flex-start;
+  border-left: 1px solid $gainsboro-2;
+}
+.contentViewTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.titleTwo {
+  color: $black;
+  margin-bottom: 23px;
+  @include roboto-slab-32-bold;
+}
+.paymentPlanOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.headerTwo {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.titleThree {
+  width: 160px;
+  color: $black;
+  margin-right: 43px;
+  @include spartan-12-bold-1;
+}
+.titleFour {
+  width: 107px;
+  color: $black;
+  @include spartan-12-bold-1;
+}
+.bottomSection {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  width: 1252px;
+}
+.payWithCreditCard {
+  display: flex;
+  align-items: center;
+  &:not(:last-of-type) {
+    margin-right: 50px;
+  }
+}
+.contentViewThree {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  width: 295px;
+}
+.amountLabel {
+  color: $black;
+  flex: 1;
+  margin-right: 12px;
+  letter-spacing: -0.6px;
+  @include spartan-20-regular-line24;
+}
+.price {
+  color: $black;
+  flex: 1;
+  letter-spacing: -0.6px;
+  @include spartan-20-bold-line24;
+}
+.primaryButton {
+  width: 174px;
+  height: 20px;
+}
+.contentViewFour {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 265px;
+}
+.titleFive {
+  color: $black;
+  align-self: stretch;
+  margin-bottom: 12px;
+  letter-spacing: -0.54px;
+  @include spartan-18-regular-line22;
+}
+.subtitle {
+  color: $dark-orange;
+  align-self: stretch;
+  letter-spacing: -0.48px;
+  @include spartan-16-bold-line19;
+}
+.secondaryButton {
+  width: 207px;
+  height: 22px;
+}

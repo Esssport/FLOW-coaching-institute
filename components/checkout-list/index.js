@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 import React, { useEffect, useState } from "react";
 import CheckoutItem from '../checkout-item';
-import Cookies from 'js-cookie'
+import Cookies from 'js-cookie';
 // import {
 //   PrimaryButton,
 //   TransparentButton,
@@ -27,21 +27,17 @@ const PrimaryButton = () => {
 
 const CheckoutList = (props) => {
   const {cart} = props
-  const [items, setItems] = useState([])
   
   const handleClearBasket = () => {
-    setItems([])
+    props.resetCart([])
     Cookies.remove('cart');
   }
   
-  useEffect(() => {
-    setItems(cart)
-  }, [])
   return (
     <div className={styles.basketDetailsSection}>
       <div className={styles.flexWrapperOne}>
         <p className={styles.basketLabel}>Your Basket</p>
-        <p className={styles.itemCountLabel}>{items?.length || 0} items</p>
+        <p className={styles.itemCountLabel}>{cart?.length || 0} items</p>
         <PrimaryButton className={styles.primaryButton} />
         <TransparentButton
           className={styles.transparentButton}
@@ -51,8 +47,7 @@ const CheckoutList = (props) => {
         {/* <p className={styles.transparentBtnLabelTwo}>Promo Code</p> */}
         </button>
       </div>
-      
-      {items?.map( cartItem => {
+      {cart?.map( cartItem => {
         return(<CheckoutItem key={cartItem.id} {...cartItem}/>)
       })}
       
