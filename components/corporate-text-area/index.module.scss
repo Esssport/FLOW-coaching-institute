@@ -1,0 +1,14 @@
+@import "/styles/variables";
+.textArea {
+    padding: 10px 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    max-width: 1342px;
+    color: $black;
+    text-align: center;
+    @include spartan-34-regular;
+}

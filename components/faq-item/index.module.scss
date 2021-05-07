@@ -1,0 +1,35 @@
+@import "/styles/variables";
+.faqItem {
+    position: relative;
+}
+
+.background {
+    width: 600px;
+    height: 72px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.questionLabel {
+    height: 69px;
+    width: 404px;
+    color: $black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 94px;
+    top: 0;
+    @include spartan-16-bold-line26;
+}
+
+.iconlyBoldInfoCircle {
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+
+.iconlyBoldArrowUp2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

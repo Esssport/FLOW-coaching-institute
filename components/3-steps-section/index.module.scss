@@ -1,0 +1,32 @@
+@import "/styles/variables";
+.num3StepsSection {
+    padding: 56px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: $black;
+    margin-bottom: 98px;
+    letter-spacing: -1.5px;
+    @include spartan-50-bold-line60;
+}
+
+.contentView {
+    padding: 0 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepCard {
+    height: 425px;
+    &:not(:last-of-type) {
+        margin-right: 4px;
+    }
+}
+
+.iconlyBoldArrowRight {
+    margin-right: 4px;
+}

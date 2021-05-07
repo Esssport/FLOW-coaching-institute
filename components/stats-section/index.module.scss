@@ -1,0 +1,49 @@
+@import "/styles/variables";
+.statsSection {
+    padding: 0 0.5px 0 0;
+}
+
+.background {
+    width: 1341.5px;
+    height: 351px;
+    background-color: $white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.content {
+    padding: 59.5px 0 59.5px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.title {
+    color: $black;
+    margin-bottom: 74px;
+    @include spartan-32-bold-1;
+}
+
+.cards {
+    padding: 0 0 0 50px;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.statsCard {
+    &:not(:last-of-type) {
+        margin-right: 71px;
+    }
+}
+
+.divider {
+    width: 1px;
+    height: 122px;
+    background-color: $black;
+    margin-right: 71px;
+}

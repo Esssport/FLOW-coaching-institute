@@ -1,0 +1,54 @@
+@import "/styles/variables";
+.featuresListCorporate {
+    background-color: $dark-slate-gray-4;
+    padding: 66px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    margin-bottom: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    color: $white;
+    align-self: stretch;
+    text-align: center;
+    margin-bottom: 45px;
+    @include spartan-50-bold-line43;
+}
+
+.subtitle {
+    color: $white;
+    align-self: stretch;
+    text-align: center;
+    @include spartan-35-regular;
+}
+
+.content {
+    padding: 20px 0 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    &:not(:last-of-type) {
+        margin-bottom: 59px;
+    }
+}
+
+.item {
+    align-self: stretch;
+    &:not(:last-of-type) {
+        margin-right: 63px;
+    }
+}

@@ -1,0 +1,49 @@
+@import "/styles/variables";
+.testimonialSection {
+    background-color: $dark-slate-gray-5;
+    padding: 54px 63px 54px 62px;
+    display: flex;
+    align-items: center;
+}
+
+.contentView {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    margin-bottom: 35px;
+    border-radius: 50%;
+}
+
+.label {
+    width: 393px;
+    text-align: center;
+    color: $white;
+    @include spartan-22-regular-line40;
+}
+
+.labelEmphasis0 {
+    color: $white;
+    letter-spacing: -0.66px;
+    @include spartan-22-bold-line40;
+}
+
+.body {
+    width: 882px;
+    color: $white;
+    @include spartan-24-bold-line55;
+}
+
+.bodyEmphasis1 {
+    color: $sandy-brown-2;
+    letter-spacing: -0.72px;
+    @include spartan-24-bold-line55;
+}

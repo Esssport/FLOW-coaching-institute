@@ -1,0 +1,32 @@
+@import "/styles/variables";
+.marketingMaterialSection {
+    padding: 67.5px 220px 66.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentView {
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconlyBoldPlus {
+    margin-bottom: 109px;
+}
+
+.title {
+    max-width: 947px;
+    color: $black;
+    text-align: center;
+    @include spartan-44-semi-bold;
+}
+
+.divider {
+    width: 1000px;
+    height: 1px;
+    background-color: $gray-901;
+}

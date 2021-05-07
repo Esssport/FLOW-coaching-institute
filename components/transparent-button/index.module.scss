@@ -1,0 +1,16 @@
+@import "/styles/variables";
+.transparentButton {
+    border-radius: 10px;
+    padding: 13px 36px;
+    display: flex;
+    align-items: center;
+    border: 5px solid $black;
+}
+
+.btnLabel {
+    color: $black;
+    flex: 1;
+    text-align: center;
+    letter-spacing: -0.9px;
+    @include spartan-30-bold;
+}

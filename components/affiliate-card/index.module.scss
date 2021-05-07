@@ -1,0 +1,30 @@
+@import "/styles/variables";
+.content {
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 5.62px 38.92px 33.53px 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flexWrapperOne {
+    margin-bottom: 68px;
+    padding: 0 0 0 34px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.title {
+    color: $black;
+    text-align: center;
+    margin-top: 27.38px;
+    margin-right: 71.87px;
+    @include spartan-24-bold-line37;
+}
+
+.subtitle {
+    color: $black;
+    text-align: center;
+    @include spartan-18-regular-line28;
+}

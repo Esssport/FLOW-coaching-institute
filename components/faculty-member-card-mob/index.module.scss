@@ -1,0 +1,23 @@
+@import "/styles/variables";
+.facultyMemberCard {
+    padding: 20px 10px 37.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image {
+    margin-bottom: 31.5px;
+    border-radius: 200px;
+}
+
+.description {
+    align-self: stretch;
+    color: $black;
+    @include spartan-12-regular-line17;
+}
+
+.descriptionEmphasis0 {
+    color: $black;
+    @include spartan-12-bold-line17;
+}

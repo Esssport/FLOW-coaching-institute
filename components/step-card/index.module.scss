@@ -1,0 +1,25 @@
+@import "/styles/variables";
+.stepCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconlyBoldTicketStar {
+    margin-bottom: 30px;
+    width: 131px;
+}
+
+.frame814 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 247px;
+}
+
+.getStartedForFreeBySimplyFillingO {
+    color: $white;
+    align-self: stretch;
+    text-align: center;
+    @include spartan-28-bold-line53;
+}

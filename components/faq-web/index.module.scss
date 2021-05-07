@@ -1,0 +1,68 @@
+@import "/styles/variables";
+.faqWeb {
+    background-color: $white-smoke-8;
+    padding: 35px 39px 101px 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sectionTitle {
+    color: $black;
+    margin-bottom: 26px;
+    margin-left: 350px;
+    @include roboto-slab-50-black-line68;
+}
+
+.contentView {
+    padding: 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &:not(:last-of-type) {
+        margin-right: 74px;
+    }
+}
+
+.flexWrapperTwo {
+    position: relative;
+    &:not(:last-of-type) {
+        margin-bottom: 53px;
+    }
+}
+
+.faqItem {
+    position: relative;
+}
+
+.faqItemTwo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.faqItemThree {
+    margin-bottom: 37px;
+}
+
+.faqItemFour {
+    margin-bottom: 24px;
+}
+
+.divider {
+    width: 2px;
+    height: 1025px;
+    background-color: $transparent-black-5;
+    margin-right: 74px;
+    border-radius: 10px;
+}
+
+.faqItemFive {
+    margin-bottom: 53px;
+}

@@ -1,0 +1,41 @@
+@import "/styles/variables";
+.header {
+    background: linear-gradient( 180deg, rgba(243, 135, 4, 1) 33%, $ghost-white 89%);
+}
+
+.imagemask {
+    position: relative;
+}
+
+.contentView {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 110px;
+    top: 114px;
+}
+
+.content {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    width: 796px;
+    color: $black;
+    margin-bottom: 24.5px;
+    @include roboto-slab-60-bold-line88;
+}
+
+.subtitle {
+    max-width: 789.45px;
+    color: $black;
+    margin-left: 6.55px;
+    @include spartan-30-bold-line54;
+}
+
+.stickySocialShare {
+    height: 343px;
+}

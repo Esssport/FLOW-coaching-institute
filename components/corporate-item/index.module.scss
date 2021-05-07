@@ -1,0 +1,35 @@
+@import "/styles/variables";
+.item {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    width: 286px;
+    color: $dark-gray-6;
+    margin-bottom: 12px;
+    @include spartan-18-regular-line32;
+}
+
+.title {
+    max-width: 286px;
+    color: $text-gray-900;
+    margin-bottom: 12px;
+    @include spartan-24-bold-line43;
+}
+
+.description {
+    max-width: 286px;
+    color: $text-gray-900;
+    @include spartan-12-regular-line26;
+}

@@ -1,0 +1,94 @@
+@import "/styles/variables";
+.paymentDetailSection {
+    padding: 0 0.5px 0 0;
+}
+
+.background {
+    width: 1341.5px;
+    height: 469px;
+    background-color: $white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contentView {
+    padding: 60px 85.5px 60px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.title {
+    color: $black;
+    margin-bottom: 68px;
+    @include spartan-32-bold-1;
+}
+
+.emailSection {
+    margin-bottom: 68px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.left {
+    margin-right: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titleTwo {
+    color: $black;
+    margin-bottom: 20px;
+    @include spartan-24-bold-1;
+}
+
+.subtitle {
+    max-width: 580px;
+    color: $black;
+    @include spartan-18-regular-line29;
+}
+
+.right {
+    position: relative;
+}
+
+.input {
+    padding: 0 0 10.48px;
+    position: relative;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.email {
+    color: $grey-aa;
+    margin-bottom: 15px;
+    @include spartan-18-bold-2;
+}
+
+.formField {
+    width: 565px;
+    height: 50px;
+    background-color: $white-smoke-2;
+    border-radius: 10px;
+}
+
+.label {
+    color: $black;
+    position: absolute;
+    left: 14.61px;
+    bottom: 12px;
+    @include spartan-18-bold-2;
+}
+
+.primaryButton {
+    width: 244px;
+}

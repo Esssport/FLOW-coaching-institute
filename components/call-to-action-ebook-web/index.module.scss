@@ -1,0 +1,77 @@
+@import "/styles/variables";
+.upcomingCoursesBookSection {
+    padding: 0 0 438px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("https://static.overlay-tech.com/assets/8f7fe5e1-67e9-4bfc-9f18-0c64c61d666e.svg");
+    background-size: 100% 100%;
+}
+
+.promotionBanner {
+    background-color: $red-1;
+    padding: 3px 181px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.content {
+    padding: 27.5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $white;
+    margin-right: 18px;
+    letter-spacing: 0.2px;
+}
+
+.subtitle {
+    color: $white;
+    @include spartan-18-bold-line26;
+}
+
+.flexWrapperOne {
+    display: flex;
+    align-items: flex-start;
+}
+
+.kitapMockup21 {
+    margin-right: 23.5px;
+}
+
+.contentView {
+    margin-top: 89.25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    color: $black;
+    align-self: stretch;
+    margin-bottom: 19.5px;
+    @include roboto-slab-50-black-line64;
+}
+
+.description {
+    max-width: 620px;
+    color: $black;
+    margin-bottom: 19.5px;
+    @include spartan-18-regular-line41;
+}
+
+.primaryButton {
+    margin-bottom: 19.5px;
+    width: 304px;
+}
+
+.transparentButton {
+    width: 244px;
+}

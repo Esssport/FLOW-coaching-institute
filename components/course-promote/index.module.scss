@@ -1,0 +1,42 @@
+@import "/styles/variables";
+.coursePromote {
+    background-color: $primary;
+    padding: 191.5px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTitle {
+    color: $white;
+    align-self: stretch;
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: -2.25px;
+    @include spartan-75-bold-line90;
+}
+
+.frame996 {
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepCard {
+    height: 425px;
+    &:not(:last-of-type) {
+        margin-right: 75px;
+    }
+}
+
+.frame997 {
+    margin-bottom: 80px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.transparentButton {
+    width: 312px;
+}
