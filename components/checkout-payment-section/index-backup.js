@@ -23,7 +23,6 @@ const PaymentSection = (props) => {
               src="https://static.overlay-tech.com/assets/b712ed1f-741a-492b-9931-87e4d9b918bb.png"
             />
           </div>
-          <PaymentStripe />
           {/* <Input className={styles.input} />
           <Input className={styles.input} />
           <div className={styles.row}>

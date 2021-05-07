@@ -33,7 +33,6 @@ export default function Home() {
   // const strapiURL = "http://localhost:1337/"
   // const pagePromise = axios.get(strapiURL + "pages")
   // const page = getPageFromPath("/", pagePromise)
-  // console.log("TITLE")
   // const pages = await pagePromise;
 
 

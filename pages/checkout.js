@@ -27,6 +27,10 @@ const Checkout = props => {
         }
         setTotalPrice(total)
     }, [])
+    
+    const deleteIndexOf = (id) => {
+        
+    }
 
     const toggleShowPayment = () => {
         setShowPayment(!showPayment)
