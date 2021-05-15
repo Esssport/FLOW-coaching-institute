@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 import React, { useEffect, useState } from "react";
-import PaymentStripe from "../payment-stripe";
+import PaymentSquare from "../payment-square";
 
 // import {
 //   Input,
@@ -23,7 +23,7 @@ const PaymentSection = (props) => {
               src="https://static.overlay-tech.com/assets/b712ed1f-741a-492b-9931-87e4d9b918bb.png"
             />
           </div>
-          <PaymentStripe />
+          <PaymentSquare />
           {/* <Input className={styles.input} />
           <Input className={styles.input} />
           <div className={styles.row}>

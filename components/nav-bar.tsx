@@ -21,8 +21,8 @@ export default function Navbar() {
                     <Link href="/">
                         <a>Resources</a>
                     </Link>
-                    <Link href="/">
-                        <a>Flowsity</a>
+                    <Link href="/Calendar">
+                        <a>Calendar</a>
                     </Link>
                     <Link href="/checkout">
                         <a><img src="/shoppingCart.svg" className='shopping-cart' alt="Shopping cart"/></a>
